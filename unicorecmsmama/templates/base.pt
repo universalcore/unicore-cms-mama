@@ -13,7 +13,6 @@
     <link href="/static/css/unicore.css?20140624" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <img width="1" height="1" style="border:0" src="http://bs.serving-sys.com/BurstingPipe/ActivityServer.bs?cn=as&amp;ActivityID=259978&amp;ns=1&amp;mb=1&amp;dvc=<device>&amp;on=<operator>"/>
     <div id="header">
       <div class="logo">
         <a href="/"><img src="/static/img/logo.png" border="0" /></a>
@@ -27,6 +26,10 @@
     </div>
     <div id="content">
       <div metal:define-slot="content"></div>
+      <div class="h1">Share This Site</div>
+      <div class="content-inner">
+          <div class="social"><p>Share This:</p> <a href="http://twitter.com/home?status=MAMA - Mobile Alliance for Maternal Action ${request.current_route_url()}"><img src="/static/img/twitter.png" /></a> <a href="http://www.facebook.com/sharer.php?u=${request.current_route_url()}&t=MAMA - Mobile Alliance for Maternal Action"><img src="/static/img/facebook.png" /></a></div>
+      </div>
     </div>
     <div id="divider"><img src="/static/img/divider.jpg" /></div>
     <div id="footer">

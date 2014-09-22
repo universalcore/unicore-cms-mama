@@ -1,28 +1,15 @@
 <div metal:use-macro="view.global_template">
-    <div metal:fill-slot="content">
-
-        <div class="page section_news object-detail ${page.primary_category.slug}-detail">
-            <div class="h1">
-                <img src="/static/img/icon-${page.primary_category.slug}.jpg"/>
-                <a href="/content/list/${page.primary_category.uuid}/">${page.primary_category.title}</a>
-                <div class="clear"></div>
+<div metal:fill-slot="content">
+    <div id="divider"><img src="/static/img/divider.jpg" /></div>
+    <div class="content-inner">
+        <div class="h1">${page.primary_category.title}</div>
+        <div class="post">
+            <div class="title">
+                ${page.title}
+                <div class="stamp">${page.created_at.strftime('%d %b %Y')}</div>
             </div>
-            <div class="object-header">
-                <div class="intro">${page.title}</div>
-                <div class="meta"></div>
-            </div>
-
-
-            <div class="object-detail-inclusion diarrhoeapost-detail-inclusion">
-                <div class="detail">
-                    <div class="content">
-                        <a name="jmbo-post"></a>
-                        <div>${structure:page.content}</div>
-                    </div>
-                    <div class="clear"></div>
-                </div>
-            </div>
+            ${structure:page.content}
         </div>
-
     </div>
+</div>
 </div>
