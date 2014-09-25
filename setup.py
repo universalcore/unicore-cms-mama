@@ -6,7 +6,7 @@ requires = [
 ]
 
 setup(name='unicore-cms-mama',
-      version='0.1',
+      version='0.2',
       description='MAMA Pyramid Frontend Site for Universal Core ',
       long_description='MAMA Pyramid Frontend Site for Universal Core ',
       classifiers=[
