@@ -1,0 +1,11 @@
+<div metal:use-macro="view.global_template">
+<div metal:fill-slot="content">
+    <div id="divider"><img src="/static/img/divider.jpg" /></div>
+    <div class="content-inner">
+        <div class="h1">${page.title}</div>
+        <div class="post">
+            ${structure:page.content}
+        </div>
+    </div>
+</div>
+</div>
