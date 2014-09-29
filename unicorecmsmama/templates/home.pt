@@ -3,12 +3,18 @@
     <div id="divider"><img src="/static/img/divider.jpg" /></div>
     <div id="banner"><img src="/static/img/banner_with_you.jpg" /></div>
 
-    <div class="content-inner" tal:repeat="cat view.get_categories()">
-        <div class="h1">
-            <a href="/content/list/${cat.uuid}/"><img src="/static/img/icon-${cat.slug}.jpg">
-              ${cat.title}
-            </a>
+    <div class="content-inner" tal:condition="view.get_featured_pages()">
+        <div class="h1">Latest</div>
+        <div class="item no-pic" tal:repeat="page view.get_featured_pages()">
+            <div class="meta">
+                <div class="title"><a href="/content/detail/${page.uuid}/">${page.title}</a></div>
+                <div class="stamp bigger">${page.description}</div>
+            </div>
         </div>
+    </div>
+
+    <div class="content-inner" tal:repeat="cat view.get_categories()">
+        <div class="h1">${cat.title}</div>
         <div class="item no-pic" tal:repeat="page view.get_featured_category_pages(cat.uuid)">
             <div class="meta">
                 <div class="title"><a href="/content/detail/${page.uuid}/">${page.title}</a></div>

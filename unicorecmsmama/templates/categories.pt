@@ -2,9 +2,7 @@
 <div metal:fill-slot="content">
     <div id="divider"><img src="/static/img/divider.jpg" /></div>
     <div class="h1" tal:repeat="cat categories">
-        <a href="/content/list/${cat.uuid}/"><img src="/static/img/icon-${category.slug}.jpg">
-          ${cat.title}
-        </a>
+        <a href="/content/list/${cat.uuid}/">${cat.title}</a>
         <div class="clear"></div>
     </div>
 </div>
