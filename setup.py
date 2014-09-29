@@ -30,4 +30,8 @@ setup(name='unicore-cms-mama',
       [paste.app_factory]
       main = unicorecmsmama:main
       """,
+      message_extractors={'.': [
+      ('**.py', 'python', None),
+      ('**.pt', 'chameleon', None),
+      ]},
       )

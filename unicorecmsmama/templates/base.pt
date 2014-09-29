@@ -2,10 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:metal="http://xml.zope.org/namespaces/metal"
       xmlns:tal="http://xml.zope.org/namespaces/tal"
-      metal:define-macro="layout">
+      metal:define-macro="layout"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      i18n:domain="unicorecmsmama">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>MAMA Mobile Community / Week-by-week guide to pregnancy and infants</title>
+    <title i18n:translate="title">MAMA Mobile Community / Week-by-week guide to pregnancy and infants</title>
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
     <meta name="description" content="mama.unicore.io is a week-by-week guide to pregnancy, birth and early childhood. It was founded by the Mobile Alliance for Maternal Action to put the power of health in every mama's hand.">
     <meta name="keywords" content="moms,maternal,baby,pregnancy,pregnant,expectant,mama,askmama,ask,mother,pain,birth,help">
@@ -14,11 +16,16 @@
   </head>
   <body>
     <div id="header">
+      <div class="nav">
+        <span tal:repeat="(code, title) view.get_available_languages">
+          <a href="/locale/?language=${code}">${title}</a> |
+        </span>
+      </div>
       <div class="logo">
         <a href="/"><img src="/static/img/logo.png" border="0" /></a>
       </div>
       <div class="nav">
-        <a href="/">Home</a>
+        <a href="/" i18n:translate="home">Home</a>
         <span tal:repeat="cat view.get_top_nav">
         <a href="/content/list/${cat.uuid}/">| ${cat.title}</a>
       </span>
@@ -26,15 +33,15 @@
     </div>
     <div id="content">
       <div metal:define-slot="content"></div>
-      <div class="h1">Share This Site</div>
+      <div class="h1" i18n:translate="share">Share This Site</div>
       <div class="content-inner">
-          <div class="social"><p>Share This:</p> <a href="http://twitter.com/home?status=MAMA - Mobile Alliance for Maternal Action ${request.current_route_url()}"><img src="/static/img/twitter.png" /></a> <a href="http://www.facebook.com/sharer.php?u=${request.current_route_url()}&t=MAMA - Mobile Alliance for Maternal Action"><img src="/static/img/facebook.png" /></a></div>
+          <div class="social"><p i18n:translate="share_this">Share This:</p> <a href="http://twitter.com/home?status=MAMA - Mobile Alliance for Maternal Action ${request.current_route_url()}"><img src="/static/img/twitter.png" /></a> <a href="http://www.facebook.com/sharer.php?u=${request.current_route_url()}&t=MAMA - Mobile Alliance for Maternal Action"><img src="/static/img/facebook.png" /></a></div>
       </div>
     </div>
     <div id="divider"><img src="/static/img/divider.jpg" /></div>
     <div id="footer">
       <span>&copy; MAMA 2014</span><br />
-      <a href="/about/">About</a> | <a href="/terms/">Terms</a> | <a href="/contact/">Contact</a>
+      <a href="/about/" i18n:translate="about">About</a> | <a href="/terms/" i18n:translate="terms">Terms</a> | <a href="/contact/" i18n:translate="contact">Contact</a>
     </div>
   </body>
 </html>

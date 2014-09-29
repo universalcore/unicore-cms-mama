@@ -1,10 +1,12 @@
-<div metal:use-macro="view.global_template">
+<div metal:use-macro="view.global_template"
+     xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+     i18n:domain="unicorecmsmama">
 <div metal:fill-slot="content">
     <div id="divider"><img src="/static/img/divider.jpg" /></div>
     <div id="banner"><img src="/static/img/banner_with_you.jpg" /></div>
 
     <div class="content-inner" tal:condition="view.get_featured_pages()">
-        <div class="h1">Latest</div>
+        <div class="h1" i18n:translate="latest">Latest</div>
         <div class="item no-pic" tal:repeat="page view.get_featured_pages()">
             <div class="meta">
                 <div class="title"><a href="/content/detail/${page.uuid}/">${page.title}</a></div>
@@ -23,7 +25,7 @@
         </div>
         <div class="more-links" tal:condition="view.get_featured_category_pages(cat.uuid)">
           <br>
-          <a href="/content/list/${cat.uuid}/">More ${cat.title}</a>
+          <a href="/content/list/${cat.uuid}/"><span i18n:translate="more">More</span> ${cat.title}</a>
         </div>
     </div>
 </div>

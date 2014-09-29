@@ -1,0 +1,60 @@
+#
+# Language ind translations for PACKAGE package
+# This file is distributed under the same license as the PACKAGE package.
+# TonyM <tonym@localhost>, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE 1.0\n"
+"POT-Creation-Date: 2014-09-29 23:05+0200\n"
+"PO-Revision-Date: 2014-09-29 23:00+0200\n"
+"Last-Translator: TonyM <tonym@localhost>\n"
+"Language-Team: Language ind\n"
+"Language: ind_ID\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Default: Latest
+#: unicorecmsmama/templates/home.pt:11
+msgid "latest"
+msgstr "Latest in ind_ID"
+
+#. Default: More
+#: unicorecmsmama/templates/home.pt:54
+msgid "more"
+msgstr "More in ind_ID"
+
+#. Default: MAMA Mobile Community / Week-by-week guide to pregnancy and infants
+#: unicorecmsmama/templates/base.pt:8
+msgid "title"
+msgstr "MAMA title in ind_ID"
+
+#. Default: Home
+#: unicorecmsmama/templates/base.pt:46
+msgid "home"
+msgstr "Home in ind_ID"
+
+#. Default: Share This Site
+#: unicorecmsmama/templates/base.pt:64
+msgid "share"
+msgstr "Share this site in ind_ID"
+
+#. Default: Share This:
+#: unicorecmsmama/templates/base.pt:69
+msgid "share_this"
+msgstr "share this in ind_ID"
+
+#. Default: About
+#: unicorecmsmama/templates/base.pt:85
+msgid "about"
+msgstr "About in ind_ID"
+
+#. Default: Terms
+#: unicorecmsmama/templates/base.pt:87
+msgid "terms"
+msgstr "Terms in ind_ID"
+
+#. Default: Contact
+#: unicorecmsmama/templates/base.pt:89
+msgid "contact"
+msgstr "Contact in ind_ID"
