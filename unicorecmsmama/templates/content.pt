@@ -8,7 +8,7 @@
                 ${page.title}
                 <div class="stamp">${page.created_at.strftime('%d %b %Y')}</div>
             </div>
-            ${structure:page.content}
+            ${structure:content}
         </div>
     </div>
 </div>

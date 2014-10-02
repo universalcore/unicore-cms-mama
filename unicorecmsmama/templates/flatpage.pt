@@ -4,7 +4,7 @@
     <div class="content-inner">
         <div class="h1">${page.title}</div>
         <div class="post">
-            ${structure:page.content}
+            ${structure:content}
         </div>
     </div>
 </div>
