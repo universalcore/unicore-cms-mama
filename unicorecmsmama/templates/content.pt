@@ -1,15 +1,24 @@
 <div metal:use-macro="view.global_template">
-<div metal:fill-slot="content">
-    <div id="divider"><img src="/static/img/divider.jpg" /></div>
-    <div class="content-inner">
-        <div class="h1">${page.primary_category.title}</div>
-        <div class="post">
-            <div class="title">
-                ${page.title}
-                <div class="stamp">${page.created_at.strftime('%d %b %Y')}</div>
+    <div metal:fill-slot="content">
+        <div id="divider"><img src="/static/img/divider.jpg" /></div>
+        <div class="content-inner">
+            <div class="h1">${page.primary_category.title}</div>
+            <div class="post">
+                <div class="title">
+                    ${page.title}
+                    <div class="stamp">${page.created_at.strftime('%d %b %Y')}</div>
+                </div>
+                ${structure:content}
             </div>
-            ${structure:content}
+            <div class="post-menu">
+                <div class="items">
+                    <div class="item" tal:repeat="linked_page page.get_linked_pages()">
+                        <a href="/content/detail/${linked_page.uuid}/">
+                            &raquo; ${linked_page.title}
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
 </div>
