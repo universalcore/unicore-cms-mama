@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 requires = [
     'pyramid',
-    'unicore-cms>=0.6.1',
+    'unicore-cms>=0.6.2',
 ]
 
 setup(name='unicore-cms-mama',
