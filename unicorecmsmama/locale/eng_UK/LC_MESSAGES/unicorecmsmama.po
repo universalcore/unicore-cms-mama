@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE 1.0\n"
-"POT-Creation-Date: 2014-09-29 23:05+0200\n"
+"POT-Creation-Date: 2014-10-10 09:23+0200\n"
 "PO-Revision-Date: 2014-09-29 23:00+0200\n"
 "Last-Translator: TonyM <tonym@localhost>\n"
 "Language-Team: Language eng\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #. Default: More
 #: unicorecmsmama/templates/home.pt:54
-msgid "more"
+msgid "More"
 msgstr ""
 
 #. Default: MAMA Mobile Community / Week-by-week guide to pregnancy and infants
@@ -31,30 +31,30 @@ msgstr ""
 
 #. Default: Home
 #: unicorecmsmama/templates/base.pt:46
-msgid "home"
+msgid "Home"
 msgstr ""
 
 #. Default: Share This Site
 #: unicorecmsmama/templates/base.pt:64
-msgid "share"
+msgid "Share This Site"
 msgstr ""
 
 #. Default: Share This:
 #: unicorecmsmama/templates/base.pt:69
-msgid "share_this"
+msgid "Share This:"
 msgstr ""
 
 #. Default: About
 #: unicorecmsmama/templates/base.pt:85
-msgid "about"
+msgid "About"
 msgstr ""
 
 #. Default: Terms
 #: unicorecmsmama/templates/base.pt:87
-msgid "terms"
+msgid "Terms"
 msgstr ""
 
 #. Default: Contact
 #: unicorecmsmama/templates/base.pt:89
-msgid "contact"
+msgid "Contact"
 msgstr ""
