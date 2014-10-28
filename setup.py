@@ -1,9 +1,9 @@
 from setuptools import setup, find_packages
+import os
 
-requires = [
-    'pyramid',
-    'unicore-cms>=0.6.2',
-]
+here = os.path.abspath(os.path.dirname(__file__))
+with open(os.path.join(here, 'requirements.txt'), 'r') as fp:
+    requires = filter(None, fp.readlines())
 
 setup(name='unicore-cms-mama',
       version='0.2',

@@ -1,5 +1,13 @@
 pip="${VENV}/bin/pip"
-cd /var/praekelt/unicore-cms-mama/ && ./install_libgit2 && cd ~/
 
-$pip install cffi praekelt-python-gitmodel
-$pip install -e /var/praekelt/unicore-cms-mama/
+cd "${INSTALLDIR}/${REPO}/"
+
+$pip install -e "${INSTALLDIR}/${REPO}/"
+
+ini_files="mama.*.ini"
+
+for ini in $ini_files
+do
+    `which eg-tools` resync -c $ini -m unicore.content.models.Category
+    `which eg-tools` resync -c $ini -m unicore.content.models.Page
+done
