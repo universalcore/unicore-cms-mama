@@ -1,14 +1,11 @@
 <div metal:use-macro="view.global_template">
 <div metal:fill-slot="content">
-    <div id="divider"><img src="/static/img/divider.jpg" /></div>
-    <div class="content-inner">
-        <div class="h1">${category.title}</div>
-
-        <div class="item no-pic" tal:repeat="page pages">
-            <div class="meta">
-                <div class="title"><a href="/content/detail/${page.uuid}/">${page.title}</a></div>
-                <div class="stamp bigger">${page.description}</div>
-            </div>
+    <div class="h2">${category.title}</div>
+    <div class="category-${category.slug}">
+        <div class="item" tal:repeat="page pages">
+            <a href="/content/detail/${page.uuid}/">${page.title}</a>
+            <div>${page.description}</div>
+            <div class="date">${view.format_date(page.created_at)}</div>
         </div>
     </div>
 </div>
