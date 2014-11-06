@@ -1,9 +1,11 @@
 <div metal:use-macro="view.global_template">
 <div metal:fill-slot="content">
-    <div id="divider"><img src="/static/img/divider.jpg" /></div>
-    <div class="h1" tal:repeat="cat categories">
-        <a href="/content/list/${cat.uuid}/">${cat.title}</a>
-        <div class="clear"></div>
+    <div tal:repeat="cat view.get_categories()">
+        <div class="category-related category-${cat.slug}">
+            <div class="item">
+                <a href="/content/list/${cat.uuid}/">${cat.title}</a>
+            </div>
+        </div>
     </div>
 </div>
 </div>

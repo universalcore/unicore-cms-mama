@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE 1.0\n"
-"POT-Creation-Date: 2014-10-10 09:23+0200\n"
+"POT-Creation-Date: 2014-11-06 17:24+0200\n"
 "PO-Revision-Date: 2014-09-29 23:00+0200\n"
 "Last-Translator: TonyM <tonym@localhost>\n"
 "Language-Team: Language ind\n"
@@ -15,12 +15,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. Default: Latest
-#: unicorecmsmama/templates/home.pt:11
+#: unicorecmsmama/templates/home.pt:14
 msgid "latest"
 msgstr "Latest in ind_ID"
 
 #. Default: More
-#: unicorecmsmama/templates/home.pt:54
+#: unicorecmsmama/templates/home.pt:73
 msgid "More"
 msgstr "More in ind_ID"
 
@@ -30,38 +30,28 @@ msgid "title"
 msgstr "MAMA title in ind_ID"
 
 #. Default: Home
-#: unicorecmsmama/templates/base.pt:46
+#: unicorecmsmama/templates/base.pt:50
 msgid "Home"
 msgstr "Home in ind_ID"
 
-#. Default: Share This Site
-#: unicorecmsmama/templates/base.pt:64
-msgid "Share This Site"
-msgstr "Share this site in ind_ID"
+#~ msgid "Share This Site"
+#~ msgstr "Share this site in ind_ID"
 
-#. Default: Share This:
-#: unicorecmsmama/templates/base.pt:69
 #, fuzzy
-msgid "Share This:"
-msgstr "share this in ind_ID:"
+#~ msgid "Share This:"
+#~ msgstr "share this in ind_ID:"
 
-#. Default: About
-#: unicorecmsmama/templates/base.pt:85
 #, fuzzy
-msgid "About"
-msgstr "About in ind_ID"
+#~ msgid "About"
+#~ msgstr "About in ind_ID"
 
-#. Default: Terms
-#: unicorecmsmama/templates/base.pt:87
 #, fuzzy
-msgid "Terms"
-msgstr "Terms in ind_ID"
+#~ msgid "Terms"
+#~ msgstr "Terms in ind_ID"
 
-#. Default: Contact
-#: unicorecmsmama/templates/base.pt:89
 #, fuzzy
-msgid "Contact"
-msgstr "Contact in ind_ID"
+#~ msgid "Contact"
+#~ msgstr "Contact in ind_ID"
 
 #~ msgid "more"
 #~ msgstr "More in ind_ID"

@@ -1,24 +1,29 @@
 <div metal:use-macro="view.global_template">
     <div metal:fill-slot="content">
-        <div id="divider"><img src="/static/img/divider.jpg" /></div>
-        <div class="content-inner">
-            <div class="h1">${primary_category.title}</div>
-            <div class="post">
-                <div class="title">
-                    ${page.title}
-                    <div class="stamp">${page.created_at}</div>
-                </div>
-                ${structure:content}
+        <div class="category-${primary_category.slug}">
+
+            <div class="pagi">
+                <a href="/content/list/${primary_category.uuid}/">&lt; Back</a>
             </div>
-            <div class="post-menu">
-                <div class="items">
-                    <div class="item" tal:repeat="linked_page linked_pages">
-                        <a href="/content/detail/${linked_page.uuid}/">
-                            &raquo; ${linked_page.title}
-                        </a>
-                    </div>
+
+            <div class="detail">
+                <div class="category">${primary_category.title}</div>
+                <div class="h3">${page.title}</div>
+                <div class="date">${view.format_date(page.created_at)}</div>
+                <div>${structure:content}</div>
+            </div>
+
+            <div class="category-related" tal:condition="linked_pages">
+                <div class="h1">More Articles</div>
+                <div class="item" tal:repeat="linked_page linked_pages">
+                    <a href="/content/detail/${linked_page.uuid}/">${linked_page.title}</a>
                 </div>
             </div>
+
+            <div class="pagi">
+                <a href="/content/list/${primary_category.uuid}/">&lt; Back</a>
+            </div>
+
         </div>
     </div>
 </div>
