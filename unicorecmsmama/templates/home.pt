@@ -6,7 +6,7 @@
         <a href="#">We're with you every step of the way.</a>
     </div><!--/banner-->
 
-    <div class="category-recommend" tal:condition="view.get_featured_pages()">
+    <div class="category-recommended" tal:condition="view.get_featured_pages()">
         <div class="h1" i18n:translate="latest">Latest</div>
         <div class="item" tal:repeat="page view.get_featured_pages()">
             <span tal:define="primary_category view.get_category(page.primary_category)">
