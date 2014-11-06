@@ -3,7 +3,7 @@
      i18n:domain="unicorecmsmama">
 <div metal:fill-slot="content">
     <div id="banner">
-        <a href="#">We're with you every step of the way.</a>
+        <a href="#">Advice to help you care for your family from experts &amp; moms</a>
     </div><!--/banner-->
 
     <div class="category-recommended" tal:condition="view.get_featured_pages()">
