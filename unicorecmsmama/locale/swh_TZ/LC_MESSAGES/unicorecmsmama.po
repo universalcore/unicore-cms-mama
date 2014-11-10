@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-06 17:24+0200\n"
+"POT-Creation-Date: 2014-11-10 13:21+0200\n"
 "PO-Revision-Date: 2014-11-06 15:18+0000\n"
 "Last-Translator: Anonymous Pootle User\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,19 +17,24 @@ msgstr ""
 "X-Generator: Pootle 2.5.1.1\n"
 "X-POOTLE-MTIME: 1415287080.816026\n"
 
-#. Default: Latest
-#: unicorecmsmama/templates/home.pt:14
+#. Default: Advice to help you care for your family from experts &amp; moms
+#: unicorecmsmama/templates/home.pt:7
+msgid "Advice to help you care for your family from experts &amp; moms"
+msgstr ""
+
+#. Default: Recommended
+#: unicorecmsmama/templates/home.pt:17
 msgid "latest"
 msgstr "Karibuni"
 
 #. Default: More
-#: unicorecmsmama/templates/home.pt:73
+#: unicorecmsmama/templates/home.pt:71
 msgid "More"
 msgstr "Zaidi"
 
 #. Default: MAMA Mobile Community / Week-by-week guide to pregnancy and infants
 #: unicorecmsmama/templates/base.pt:8
-msgid "title"
+msgid "MAMA Mobile Community / Week-by-week guide to pregnancy and infants"
 msgstr ""
 
 #. Default: Home

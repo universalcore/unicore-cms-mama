@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE 1.0\n"
-"POT-Creation-Date: 2014-11-06 17:24+0200\n"
+"POT-Creation-Date: 2014-11-10 13:21+0200\n"
 "PO-Revision-Date: 2014-09-29 23:00+0200\n"
 "Last-Translator: TonyM <tonym@localhost>\n"
 "Language-Team: Language eng\n"
@@ -14,19 +14,24 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. Default: Latest
-#: unicorecmsmama/templates/home.pt:14
+#. Default: Advice to help you care for your family from experts &amp; moms
+#: unicorecmsmama/templates/home.pt:7
+msgid "Advice to help you care for your family from experts &amp; moms"
+msgstr ""
+
+#. Default: Recommended
+#: unicorecmsmama/templates/home.pt:17
 msgid "latest"
 msgstr ""
 
 #. Default: More
-#: unicorecmsmama/templates/home.pt:73
+#: unicorecmsmama/templates/home.pt:71
 msgid "More"
 msgstr ""
 
 #. Default: MAMA Mobile Community / Week-by-week guide to pregnancy and infants
 #: unicorecmsmama/templates/base.pt:8
-msgid "title"
+msgid "MAMA Mobile Community / Week-by-week guide to pregnancy and infants"
 msgstr ""
 
 #. Default: Home
