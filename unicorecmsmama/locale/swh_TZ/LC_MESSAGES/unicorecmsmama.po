@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-10 13:21+0200\n"
+"POT-Creation-Date: 2014-11-11 08:55+0200\n"
 "PO-Revision-Date: 2014-11-06 15:18+0000\n"
 "Last-Translator: Anonymous Pootle User\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,17 +18,17 @@ msgstr ""
 "X-POOTLE-MTIME: 1415287080.816026\n"
 
 #. Default: Advice to help you care for your family from experts &amp; moms
-#: unicorecmsmama/templates/home.pt:7
+#: unicorecmsmama/templates/home.pt:5
 msgid "Advice to help you care for your family from experts &amp; moms"
 msgstr ""
 
 #. Default: Recommended
-#: unicorecmsmama/templates/home.pt:17
+#: unicorecmsmama/templates/home.pt:13
 msgid "latest"
 msgstr "Karibuni"
 
 #. Default: More
-#: unicorecmsmama/templates/home.pt:71
+#: unicorecmsmama/templates/home.pt:67
 msgid "More"
 msgstr "Zaidi"
 

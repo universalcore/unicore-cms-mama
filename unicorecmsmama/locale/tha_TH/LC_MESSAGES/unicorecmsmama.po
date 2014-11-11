@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE 1.0\n"
-"POT-Creation-Date: 2014-11-10 13:21+0200\n"
+"POT-Creation-Date: 2014-11-11 08:55+0200\n"
 "PO-Revision-Date: 2014-09-29 23:00+0200\n"
 "Last-Translator: TonyM <tonym@localhost>\n"
 "Language-Team: Language tha\n"
@@ -15,17 +15,17 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. Default: Advice to help you care for your family from experts &amp; moms
-#: unicorecmsmama/templates/home.pt:7
+#: unicorecmsmama/templates/home.pt:5
 msgid "Advice to help you care for your family from experts &amp; moms"
 msgstr ""
 
 #. Default: Recommended
-#: unicorecmsmama/templates/home.pt:17
+#: unicorecmsmama/templates/home.pt:13
 msgid "latest"
 msgstr "Latest in tha_TH"
 
 #. Default: More
-#: unicorecmsmama/templates/home.pt:71
+#: unicorecmsmama/templates/home.pt:67
 msgid "More"
 msgstr "More in tha_TH"
 
