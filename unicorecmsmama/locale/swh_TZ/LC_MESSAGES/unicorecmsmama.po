@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-11 08:55+0200\n"
+"POT-Creation-Date: 2014-11-11 15:24+0200\n"
 "PO-Revision-Date: 2014-11-06 15:18+0000\n"
 "Last-Translator: Anonymous Pootle User\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,23 +24,21 @@ msgstr ""
 
 #. Default: Recommended
 #: unicorecmsmama/templates/home.pt:13
-msgid "latest"
-msgstr "Karibuni"
+msgid "Recommended"
+msgstr ""
 
 #. Default: More
 #: unicorecmsmama/templates/home.pt:67
 msgid "More"
 msgstr "Zaidi"
 
-#. Default: MAMA Mobile Community / Week-by-week guide to pregnancy and infants
-#: unicorecmsmama/templates/base.pt:8
-msgid "MAMA Mobile Community / Week-by-week guide to pregnancy and infants"
-msgstr ""
-
 #. Default: Home
 #: unicorecmsmama/templates/base.pt:50
 msgid "Home"
 msgstr "Nyumbani"
+
+#~ msgid "latest"
+#~ msgstr "Karibuni"
 
 #~ msgid "Share This Site"
 #~ msgstr "Kushiriki Tovuti Hii"

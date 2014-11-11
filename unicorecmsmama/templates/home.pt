@@ -8,7 +8,7 @@
     </div><!--/banner-->
 
     <div class="category-recommended" tal:condition="view.get_featured_pages()">
-        <div class="h1" i18n:translate="latest">Recommended</div>
+        <div class="h1" i18n:translate="Recommended">Recommended</div>
         <div class="item" tal:repeat="page view.get_featured_pages()">
             <div tal:define="primary_category view.get_category(page.primary_category)">
             <span class="category-${primary_category.slug}">
