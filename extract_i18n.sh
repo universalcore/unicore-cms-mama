@@ -4,23 +4,16 @@ mkdir -p unicorecmsmama/locale
 
 pot-create -o unicorecmsmama/locale/unicorecmsmama.pot unicorecmsmama/
 
-mkdir -p unicorecmsmama/locale/eng_UK/LC_MESSAGES
-mkdir -p unicorecmsmama/locale/tha_TH/LC_MESSAGES
-mkdir -p unicorecmsmama/locale/ind_ID/LC_MESSAGES
-mkdir -p unicorecmsmama/locale/swh_TZ/LC_MESSAGES
+declare -a arr=("eng_UK" "tha_TH" "ind_ID" "swh_TZ" "swh_KE")
 
-# only uncomment if it's the 1st time
-#msginit -l eng_UK -i unicorecmsmama/locale/unicorecmsmama.pot -o unicorecmsmama/locale/eng_UK/LC_MESSAGES/unicorecmsmama.po
-#msginit -l tha_TH -i unicorecmsmama/locale/unicorecmsmama.pot -o unicorecmsmama/locale/tha_TH/LC_MESSAGES/unicorecmsmama.po
-#msginit -l ind_ID -i unicorecmsmama/locale/unicorecmsmama.pot -o unicorecmsmama/locale/ind_ID/LC_MESSAGES/unicorecmsmama.po
-#msginit -l swh_TZ -i unicorecmsmama/locale/unicorecmsmama.pot -o unicorecmsmama/locale/swh_TZ/LC_MESSAGES/unicorecmsmama.po
+for lang in "${arr[@]}"
+do
+    mkdir -p "unicorecmsmama/locale/""$lang""/LC_MESSAGES"
 
-msgmerge --update unicorecmsmama/locale/eng_UK/LC_MESSAGES/unicorecmsmama.po unicorecmsmama/locale/unicorecmsmama.pot
-msgmerge --update unicorecmsmama/locale/tha_TH/LC_MESSAGES/unicorecmsmama.po unicorecmsmama/locale/unicorecmsmama.pot
-msgmerge --update unicorecmsmama/locale/ind_ID/LC_MESSAGES/unicorecmsmama.po unicorecmsmama/locale/unicorecmsmama.pot
-msgmerge --update unicorecmsmama/locale/swh_TZ/LC_MESSAGES/unicorecmsmama.po unicorecmsmama/locale/unicorecmsmama.pot
+    if [ ! -f "unicorecmsmama/locale/""$lang""/LC_MESSAGES/unicorecmsmama.po" ]; then
+        msginit -l $lang -i unicorecmsmama/locale/unicorecmsmama.pot -o unicorecmsmama/locale/$lang/LC_MESSAGES/unicorecmsmama.po
+    fi
 
-msgfmt unicorecmsmama/locale/eng_UK/LC_MESSAGES/*.po -o unicorecmsmama/locale/eng_UK/LC_MESSAGES/unicorecmsmama.mo
-msgfmt unicorecmsmama/locale/tha_TH/LC_MESSAGES/*.po -o unicorecmsmama/locale/tha_TH/LC_MESSAGES/unicorecmsmama.mo
-msgfmt unicorecmsmama/locale/ind_ID/LC_MESSAGES/*.po -o unicorecmsmama/locale/ind_ID/LC_MESSAGES/unicorecmsmama.mo
-msgfmt unicorecmsmama/locale/swh_TZ/LC_MESSAGES/*.po -o unicorecmsmama/locale/swh_TZ/LC_MESSAGES/unicorecmsmama.mo
+    msgmerge --update unicorecmsmama/locale/$lang/LC_MESSAGES/unicorecmsmama.po unicorecmsmama/locale/unicorecmsmama.pot
+    msgfmt unicorecmsmama/locale/$lang/LC_MESSAGES/*.po -o unicorecmsmama/locale/$lang/LC_MESSAGES/unicorecmsmama.mo
+done
