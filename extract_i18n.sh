@@ -4,7 +4,7 @@ mkdir -p unicorecmsmama/locale
 
 pot-create -o unicorecmsmama/locale/unicorecmsmama.pot unicorecmsmama/
 
-declare -a arr=("eng_UK" "tha_TH" "ind_ID" "swh_TZ" "swh_KE")
+declare -a arr=("eng_GB" "tha_TH" "ind_ID" "swa_TZ" "swa_KE")
 
 for lang in "${arr[@]}"
 do
