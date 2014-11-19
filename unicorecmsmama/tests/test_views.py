@@ -48,7 +48,6 @@ class TestViews(UnicoreTestCase):
         self.workspace.refresh_index()
 
         resp = self.app.get('/', status=200)
-        print resp.body
         self.assertTrue(
             '<div id="banner">Advice to help you care for your family '
             'from experts &amp; moms</div>' in
