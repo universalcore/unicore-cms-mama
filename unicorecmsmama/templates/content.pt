@@ -9,6 +9,7 @@
             <div class="detail">
                 <div class="category">${primary_category.title}</div>
                 <div class="h3">${page.title}</div>
+                <div>${page.description}</div>
                 <div class="date">${view.format_date(page.created_at)}</div>
                 <div>${structure:content}</div>
             </div>
