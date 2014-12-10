@@ -2,10 +2,6 @@
     <div metal:fill-slot="content">
         <div class="category-${primary_category.slug}">
 
-            <div class="pagi">
-                <a href="/content/list/${primary_category.uuid}/">&lt; Back</a>
-            </div>
-
             <div class="detail">
                 <div class="category">${primary_category.title}</div>
                 <div class="h3">${page.title}</div>
