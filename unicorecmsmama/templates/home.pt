@@ -18,7 +18,6 @@
                 <a href="/content/detail/${page.uuid}/">${primary_category.title}</a></span><br />
             <a href="/content/detail/${page.uuid}/">${page.title}</a>
             <div>${page.description}</div>
-            <div class="date">${view.format_date(page.created_at)}</div>
             </div>
         </div>
     </div>
@@ -33,7 +32,6 @@
                 <span tal:define="primary_category view.get_category(page.primary_category)">
                 <a href="/content/detail/${page.uuid}/">${page.title}</a>
                 <div>${page.description}</div>
-                <div class="date">${view.format_date(page.created_at)}</div>
                 </span>
             </div>
             <div class="pagi" tal:condition="view.get_featured_category_pages(cat.uuid)">
