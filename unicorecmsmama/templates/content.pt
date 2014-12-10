@@ -12,9 +12,9 @@
                     <img alt="img" src="${view.get_image_url(page.image_host, page.image, 350, 150)}"/>
                 </condition>
                 <!-- test image!<img alt="img" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-4jpnKajPFZ8mR-qdjfnm9kGZnr1GC_2wA5-NcJDFyMqPKVr6hA"/> -->
-                <div>${page.description}</div>
-                <div class="date">${view.format_date(page.created_at)}</div>
                 <div>${structure:content}</div>
+                <div class="date">${view.format_date(page.created_at)}</div>
+
             </div>
 
             <div class="category-related" tal:condition="linked_pages">
