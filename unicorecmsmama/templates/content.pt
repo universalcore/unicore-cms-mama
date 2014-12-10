@@ -2,8 +2,11 @@
     <div metal:fill-slot="content">
         <div class="category-${primary_category.slug}">
 
+            <div class="h1">
+                <a href="/content/list/${primary_category.uuid}/">${primary_category.title}</a>
+            </div>
+
             <div class="detail">
-                <div class="category">${primary_category.title}</div>
                 <div class="h3">${page.title}</div>
                 <div>${page.description}</div>
                 <div class="date">${view.format_date(page.created_at)}</div>
