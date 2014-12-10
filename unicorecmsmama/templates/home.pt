@@ -19,8 +19,7 @@
         </div>
     </div>
 
-    <div class="content-inner" tal:repeat="cat view.get_categories()">
-        <div class="category-${cat.slug}">
+        <div class="category-${cat.slug}" tal:repeat="cat view.get_categories()">
             <div class="h1">${cat.title}</div>
             <div class="item" tal:repeat="page view.get_featured_category_pages(cat.uuid)">
                 <condition tal:omit-tag="" tal:condition="page.image_host and page.image">
@@ -34,6 +33,5 @@
               <a href="/content/list/${cat.uuid}/"><span i18n:translate="More">More</span> ${cat.title} &gt;</a>
             </div>
         </div>
-    </div>
 </div>
 </div>
