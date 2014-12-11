@@ -9,7 +9,7 @@
             <div class="detail">
                 <div class="h3">${page.title}</div>
                 <condition tal:omit-tag="" tal:condition="page.image_host and page.image">
-                    <img alt="img" src="${view.get_image_url(page.image_host, page.image, 350, 150)}"/>
+                    <img alt="img" src="${view.get_image_url(page.image_host, page.image, 350)}"/>
                 </condition>
                 <div>${structure:content}</div>
                 <div class="date">${view.format_date(page.created_at)}</div>
