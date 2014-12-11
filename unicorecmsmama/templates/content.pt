@@ -11,7 +11,6 @@
                 <condition tal:omit-tag="" tal:condition="page.image_host and page.image">
                     <img alt="img" src="${view.get_image_url(page.image_host, page.image, 350, 150)}"/>
                 </condition>
-                <!-- test image!<img alt="img" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-4jpnKajPFZ8mR-qdjfnm9kGZnr1GC_2wA5-NcJDFyMqPKVr6hA"/> -->
                 <div>${structure:content}</div>
                 <div class="date">${view.format_date(page.created_at)}</div>
 
@@ -25,7 +24,7 @@
             </div>
 
             <div class="pagi">
-                <a href="/content/list/${primary_category.uuid}/" class="right">More Articles &gt;</a>
+                <a href="/content/list/${primary_category.uuid}/">More &gt;</a>
             </div>
 
         </div>

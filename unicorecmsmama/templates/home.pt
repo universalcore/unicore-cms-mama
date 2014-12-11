@@ -13,7 +13,6 @@
             <condition tal:omit-tag="" tal:condition="page.image_host and page.image">
                     <img alt="img" src="${view.get_image_url(page.image_host, page.image, 45, 45)}"/>
             </condition>
-            <!-- test image! <img alt="img" src="http://www.ngopost.org/npimg/icons/category/health.png"> -->
             <span class="category-${primary_category.slug}" tal:define="primary_category view.get_category(page.primary_category)">
             <a href="/content/detail/${page.uuid}/">${primary_category.title}</a>
             </span>
@@ -29,7 +28,6 @@
                 <condition tal:omit-tag="" tal:condition="page.image_host and page.image">
                         <img alt="img" src="${view.get_image_url(page.image_host, page.image, 45, 45)}"/>
                 </condition>
-                <!-- test image! <img alt="img" src="http://www.ngopost.org/npimg/icons/category/health.png"> -->
                 <div tal:define="primary_category view.get_category(page.primary_category)">
                 <a href="/content/detail/${page.uuid}/"><strong>${page.title}:</strong> ${page.description}</a>
                 <div class="clear"></div>
