@@ -9,31 +9,33 @@
 
     <div class="category-recommended" tal:condition="view.get_featured_pages()">
         <div class="h1" i18n:translate="Recommended">Recommended</div>
-        <div class="item" tal:repeat="page view.get_featured_pages()">
-            <div tal:define="primary_category view.get_category(page.primary_category)">
-            <span class="category-${primary_category.slug}">
-                <a href="/content/detail/${page.uuid}/">${primary_category.title}</a></span><br />
-            <a href="/content/detail/${page.uuid}/">${page.title}</a>
-            <div>${page.description}</div>
-            <div class="date">${view.format_date(page.created_at)}</div>
-            </div>
+        <div class="item" tal:repeat="page view.get_featured_pages()" >
+            <condition tal:omit-tag="" tal:condition="page.image_host and page.image">
+                    <img alt="img" src="${view.get_image_url(page.image_host, page.image, 45, 45)}"/>
+            </condition>
+            <span class="category-${primary_category.slug}" tal:define="primary_category view.get_category(page.primary_category)">
+            <a href="/content/detail/${page.uuid}/">${primary_category.title}</a>
+            </span>
+            <br />
+            <a href="/content/detail/${page.uuid}/"><strong>${page.title}:</strong> ${page.description}</a>
+            <div class="clear"></div>
         </div>
     </div>
 
-    <div class="content-inner" tal:repeat="cat view.get_categories()">
-        <div class="category-${cat.slug}">
+        <div class="category-${cat.slug}" tal:repeat="cat view.get_categories()">
             <div class="h1">${cat.title}</div>
-            <div class="item" tal:repeat="page view.get_featured_category_pages(cat.uuid)">
-                <span tal:define="primary_category view.get_category(page.primary_category)">
-                <a href="/content/detail/${page.uuid}/">${page.title}</a>
-                <div>${page.description}</div>
-                <div class="date">${view.format_date(page.created_at)}</div>
-                </span>
+            <div class="item" tal:repeat="page view.get_featured_category_pages(cat.uuid)" >
+                <condition tal:omit-tag="" tal:condition="page.image_host and page.image">
+                        <img alt="img" src="${view.get_image_url(page.image_host, page.image, 45, 45)}"/>
+                </condition>
+                <div tal:define="primary_category view.get_category(page.primary_category)">
+                <a href="/content/detail/${page.uuid}/"><strong>${page.title}:</strong> ${page.description}</a>
+                <div class="clear"></div>
+                </div>
             </div>
             <div class="pagi" tal:condition="view.get_featured_category_pages(cat.uuid)">
               <a href="/content/list/${cat.uuid}/"><span i18n:translate="More">More</span> ${cat.title} &gt;</a>
             </div>
         </div>
-    </div>
 </div>
 </div>

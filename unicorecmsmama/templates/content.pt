@@ -2,16 +2,18 @@
     <div metal:fill-slot="content">
         <div class="category-${primary_category.slug}">
 
-            <div class="pagi">
-                <a href="/content/list/${primary_category.uuid}/">&lt; Back</a>
+            <div class="h1">
+                <a href="/content/list/${primary_category.uuid}/">${primary_category.title}</a>
             </div>
 
             <div class="detail">
-                <div class="category">${primary_category.title}</div>
                 <div class="h3">${page.title}</div>
-                <div>${page.description}</div>
-                <div class="date">${view.format_date(page.created_at)}</div>
+                <condition tal:omit-tag="" tal:condition="page.image_host and page.image">
+                    <img alt="img" src="${view.get_image_url(page.image_host, page.image, 350)}"/>
+                </condition>
                 <div>${structure:content}</div>
+                <div class="date">${view.format_date(page.created_at)}</div>
+
             </div>
 
             <div class="category-related" tal:condition="linked_pages">
@@ -22,7 +24,7 @@
             </div>
 
             <div class="pagi">
-                <a href="/content/list/${primary_category.uuid}/">&lt; Back</a>
+                <a href="/content/list/${primary_category.uuid}/">More &gt;</a>
             </div>
 
         </div>
