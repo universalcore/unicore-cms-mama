@@ -25,7 +25,6 @@
             </div>
 
             <div class="pagi">
-                <a href="/content/list/${primary_category.uuid}/">&lt; Back</a>
                 <a href="/content/list/${primary_category.uuid}/" class="right">More Articles &gt;</a>
             </div>
 
