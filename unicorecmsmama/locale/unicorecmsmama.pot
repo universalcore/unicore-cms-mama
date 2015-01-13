@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE 1.0\n"
-"POT-Creation-Date: 2015-01-13 16:18+0200\n"
+"POT-Creation-Date: 2015-01-13 18:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,9 +31,9 @@ msgstr ""
 msgid "More"
 msgstr ""
 
-#. Default: More Articles
+#. Default: More Information
 #: ./unicorecmsmama/templates/content.pt:39
-msgid "More Articles"
+msgid "More Information"
 msgstr ""
 
 #. Default: Home

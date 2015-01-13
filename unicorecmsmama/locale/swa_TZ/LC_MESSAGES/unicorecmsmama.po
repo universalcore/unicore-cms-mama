@@ -1,4 +1,4 @@
-# 
+#
 # SOME DESCRIPTIVE TITLE
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-13 15:06+0200\n"
+"POT-Creation-Date: 2015-01-13 18:59+0200\n"
 "PO-Revision-Date: 2015-01-13 13:20+0000\n"
 "Last-Translator: Milton <milton@praekelt.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,27 +18,26 @@ msgstr ""
 "X-POOTLE-MTIME: 1421155245.667287\n"
 
 #. Default: Advice to help you care for your family from experts &amp; moms
-#: ./unicorecmsmama/templates/home.pt:5
+#: unicorecmsmama/templates/home.pt:5
 msgid "Advice to help you care for your family from experts &amp; moms"
 msgstr "Ushauri kukusaidia kutunza familia yako kutoka wataalam na wamama"
 
 #. Default: Recommended
-#: ./unicorecmsmama/templates/home.pt:13
+#: unicorecmsmama/templates/home.pt:13
 msgid "Recommended"
 msgstr "Mapendekezo"
 
 #. Default: More
-#: ./unicorecmsmama/templates/home.pt:71
-#: ./unicorecmsmama/templates/content.pt:54
+#: unicorecmsmama/templates/home.pt:71 unicorecmsmama/templates/content.pt:54
 msgid "More"
 msgstr "Zaidi"
 
-#. Default: More Articles
-#: ./unicorecmsmama/templates/content.pt:39
-msgid "More Articles"
+#. Default: More Information
+#: unicorecmsmama/templates/content.pt:39
+msgid "More Information"
 msgstr ""
 
 #. Default: Home
-#: ./unicorecmsmama/templates/base.pt:58
+#: unicorecmsmama/templates/base.pt:58
 msgid "Home"
 msgstr "Nyumbani"

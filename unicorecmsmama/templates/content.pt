@@ -19,7 +19,7 @@
             </div>
 
             <div class="category-related" tal:condition="linked_pages">
-                <div class="h1" i18n:translate="More Articles">More Articles</div>
+                <div class="h1" i18n:translate="More Information">More Information</div>
                 <div class="item" tal:repeat="linked_page linked_pages">
                     <a href="/content/detail/${linked_page.uuid}/">${linked_page.title}</a>
                 </div>
