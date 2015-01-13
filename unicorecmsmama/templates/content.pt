@@ -1,4 +1,6 @@
-<div metal:use-macro="view.global_template">
+<div metal:use-macro="view.global_template"
+     xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+     i18n:domain="unicorecmsmama">
     <div metal:fill-slot="content">
         <div class="category-${primary_category.slug}">
 
@@ -17,14 +19,14 @@
             </div>
 
             <div class="category-related" tal:condition="linked_pages">
-                <div class="h1">More Articles</div>
+                <div class="h1" i18n:translate="More Articles">More Articles</div>
                 <div class="item" tal:repeat="linked_page linked_pages">
                     <a href="/content/detail/${linked_page.uuid}/">${linked_page.title}</a>
                 </div>
             </div>
 
             <div class="pagi">
-                <a href="/content/list/${primary_category.uuid}/">More &gt;</a>
+                <a href="/content/list/${primary_category.uuid}/"><span i18n:translate="More">More</span> &gt;</a>
             </div>
 
         </div>
