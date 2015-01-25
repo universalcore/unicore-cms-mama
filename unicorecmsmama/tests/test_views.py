@@ -5,8 +5,6 @@ from cms.tests.base import UnicoreTestCase
 from unicorecmsmama import main
 from unicore.content.models import Page
 
-from unicorecmsmama import main
-
 
 class TestViews(UnicoreTestCase):
 
