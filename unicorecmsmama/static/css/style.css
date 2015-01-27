@@ -51,6 +51,7 @@
 		#content .item span a { font-size: 12px; text-transform: uppercase; line-height: 12px; }
 		#content .item .date { font-size: 11px; font-style: italic; color: #ccc!important; }
 		#content .item img { float: left; margin: 4px 10px 5px 0; }
+		[dir='rtl'] #content .item img { float: right; margin: 4px 0px 5px 10px; }
 		
 		#content .pagi { padding: 10px 16px; font-weight: bold; }
 		#content .pagi a { color: #f7a11a; }
