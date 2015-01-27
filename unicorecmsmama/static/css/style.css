@@ -15,6 +15,7 @@
 /*  LOCALE  */
 
 	.locale { padding: 5px 16px; text-align: right; background: #f0f0f0; border-bottom: 1px solid #e6e6e6; color: #e6e6e6; }
+	[dir='rtl'] .locale { padding: 5px 16px; text-align: left; background: #f0f0f0; border-bottom: 1px solid #e6e6e6; color: #e6e6e6; }
 		.locale a { font-size: 11px; color: #f7a11a; }
 
 
@@ -27,6 +28,7 @@
 /*  NAV  */
 
 	#nav { padding: 10px 16px; background: #f7a11a; font-size: 14px; font-weight: bold; color: #ffc20f; text-align: left; }
+	[dir='rtl'] #nav { padding: 10px 16px; background: #f7a11a; font-size: 14px; font-weight: bold; color: #ffc20f; text-align: right; }
 		#nav a { color: #fff; }
 
 
@@ -49,6 +51,7 @@
 		#content .item span a { font-size: 12px; text-transform: uppercase; line-height: 12px; }
 		#content .item .date { font-size: 11px; font-style: italic; color: #ccc!important; }
 		#content .item img { float: left; margin: 4px 10px 5px 0; }
+		[dir='rtl'] #content .item img { float: right; margin: 4px 0px 5px 10px; }
 		
 		#content .pagi { padding: 10px 16px; font-weight: bold; }
 		#content .pagi a { color: #f7a11a; }
@@ -80,6 +83,7 @@
 /*  MENU  */
 
 	#menu { padding: 10px 16px; background: #f7a11a; color: #ffc20f; text-align: left; font-weight: bold; }
+	[dir='rtl'] #menu { padding: 10px 16px; background: #f7a11a; color: #ffc20f; text-align: right; font-weight: bold; }
 		#menu a, #menu span { color: #fff; }
 
 
