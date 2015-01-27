@@ -4,7 +4,8 @@
       xmlns:tal="http://xml.zope.org/namespaces/tal"
       metal:define-macro="layout"
       xmlns:i18n="http://xml.zope.org/namespaces/i18n"
-      i18n:domain="unicorecmsmama">
+      i18n:domain="unicorecmsmama"
+      dir="${view.get_language_direction()}">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>MAMA Mobile Community / Week-by-week guide to pregnancy and infants</title>
