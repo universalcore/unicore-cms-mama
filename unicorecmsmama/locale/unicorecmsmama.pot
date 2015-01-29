@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE 1.0\n"
-"POT-Creation-Date: 2015-01-24 09:44+0200\n"
+"POT-Creation-Date: 2015-01-29 15:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,9 +15,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: \n"
 
-#. Default: Advice to help you care for your family from experts &amp; moms
+#. Default: Advice from experts and parents
 #: ./unicorecmsmama/templates/home.pt:5
-msgid "Advice to help you care for your family from experts &amp; moms"
+msgid "Advice from experts and parents"
 msgstr ""
 
 #. Default: Recommended

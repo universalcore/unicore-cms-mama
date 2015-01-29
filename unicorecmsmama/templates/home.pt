@@ -3,8 +3,8 @@
      i18n:domain="unicorecmsmama">
 <div metal:fill-slot="content">
 
-    <div id="banner" i18n:translate="Advice to help you care for your family from experts &amp; moms">
-            Advice to help you care for your family from experts &amp; moms
+    <div id="banner" i18n:translate="Advice from experts and parents">
+            Advice from experts and parents
     </div><!--/banner-->
 
     <div class="category-recommended" tal:condition="view.get_featured_pages()">

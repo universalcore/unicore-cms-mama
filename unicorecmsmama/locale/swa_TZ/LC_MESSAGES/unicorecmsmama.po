@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-24 09:44+0200\n"
+"POT-Creation-Date: 2015-01-29 15:49+0200\n"
 "PO-Revision-Date: 2015-01-13 13:20+0000\n"
 "Last-Translator: Milton <milton@praekelt.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,10 +17,10 @@ msgstr ""
 "X-Generator: Pootle 2.5.1.1\n"
 "X-POOTLE-MTIME: 1421155245.667287\n"
 
-#. Default: Advice to help you care for your family from experts &amp; moms
+#. Default: Advice from experts and parents
 #: unicorecmsmama/templates/home.pt:5
-msgid "Advice to help you care for your family from experts &amp; moms"
-msgstr "Ushauri kukusaidia kutunza familia yako kutoka wataalam na wamama"
+msgid "Advice from experts and parents"
+msgstr ""
 
 #. Default: Recommended
 #: unicorecmsmama/templates/home.pt:13
@@ -41,3 +41,6 @@ msgstr ""
 #: unicorecmsmama/templates/base.pt:58
 msgid "Home"
 msgstr "Nyumbani"
+
+#~ msgid "Advice to help you care for your family from experts &amp; moms"
+#~ msgstr "Ushauri kukusaidia kutunza familia yako kutoka wataalam na wamama"

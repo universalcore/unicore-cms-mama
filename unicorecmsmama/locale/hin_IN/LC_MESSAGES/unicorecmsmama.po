@@ -1,4 +1,4 @@
-# 
+#
 # SOME DESCRIPTIVE TITLE
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-13 18:59+0200\n"
+"POT-Creation-Date: 2015-01-29 15:49+0200\n"
 "PO-Revision-Date: 2015-01-15 10:03+0000\n"
 "Last-Translator: Tash <tash@praekelt.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,31 +17,33 @@ msgstr ""
 "X-Generator: Pootle 2.5.1.1\n"
 "X-POOTLE-MTIME: 1421316207.402254\n"
 
-#. Default: Advice to help you care for your family from experts &amp; moms
-#: ./unicorecmsmama/templates/home.pt:5
-msgid "Advice to help you care for your family from experts &amp; moms"
-msgstr "विशेषज्ञों एवं अन्य माताओं की सलाह, आपके परिवार की देखभाल के लिए"
+#. Default: Advice from experts and parents
+#: unicorecmsmama/templates/home.pt:5
+msgid "Advice from experts and parents"
+msgstr ""
 
 #. Default: Recommended
-#: ./unicorecmsmama/templates/home.pt:13
+#: unicorecmsmama/templates/home.pt:13
 msgid "Recommended"
 msgstr "गर्भावस्था"
 
 #. Default: More
-#: ./unicorecmsmama/templates/home.pt:71
-#: ./unicorecmsmama/templates/content.pt:54
+#: unicorecmsmama/templates/home.pt:71 unicorecmsmama/templates/content.pt:54
 msgid "More"
 msgstr "और"
 
 #. Default: More Information
-#: ./unicorecmsmama/templates/content.pt:39
+#: unicorecmsmama/templates/content.pt:39
 msgid "More Information"
 msgstr "और जानकारी"
 
 #. Default: Home
-#: ./unicorecmsmama/templates/base.pt:58
+#: unicorecmsmama/templates/base.pt:58
 msgid "Home"
 msgstr "होम पेज"
+
+#~ msgid "Advice to help you care for your family from experts &amp; moms"
+#~ msgstr "विशेषज्ञों एवं अन्य माताओं की सलाह, आपके परिवार की देखभाल के लिए"
 
 #~ msgid "More Articles"
 #~ msgstr "और जानकारी"

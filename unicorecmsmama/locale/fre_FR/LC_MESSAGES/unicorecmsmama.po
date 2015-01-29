@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-24 09:44+0200\n"
+"POT-Creation-Date: 2015-01-29 15:49+0200\n"
 "PO-Revision-Date: 2014-12-01 07:06+0000\n"
 "Last-Translator: tash <tash@praekelt.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,9 @@ msgstr ""
 "X-Generator: Pootle 2.5.1.1\n"
 "X-POOTLE-MTIME: 1417417579.970004\n"
 
-#. Default: Advice to help you care for your family from experts &amp; moms
+#. Default: Advice from experts and parents
 #: unicorecmsmama/templates/home.pt:5
-msgid "Advice to help you care for your family from experts &amp; moms"
+msgid "Advice from experts and parents"
 msgstr ""
 
 #. Default: Recommended
