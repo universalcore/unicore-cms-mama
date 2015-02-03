@@ -32,7 +32,7 @@
         </a>
     </div><!--/header-->
 
-    <div id="nav">
+    <div id="nav" metal:define-slot="nav">
         <a href="/" i18n:translate="Home">Home</a>
         <span tal:repeat="cat view.get_top_nav">
         <a href="/content/list/${cat.uuid}/">| ${cat.title}</a>
@@ -42,7 +42,7 @@
     <div id="content">
       <div metal:define-slot="content"></div>
 
-      <div id="menu">
+      <div id="menu" metal:define-slot="menu">
           <span tal:repeat="cat view.get_top_nav">
             <a href="/content/list/${cat.uuid}/">${cat.title}</a>
             <span omit-tag="" tal:condition="not repeat.cat.end"> |</span>
