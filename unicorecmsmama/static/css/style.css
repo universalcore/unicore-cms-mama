@@ -14,9 +14,12 @@
 
 /*  LOCALE  */
 
-	.locale { padding: 5px 16px; text-align: right; background: #f0f0f0; border-bottom: 1px solid #e6e6e6; color: #e6e6e6; }
-	[dir='rtl'] .locale { padding: 5px 16px; text-align: left; background: #f0f0f0; border-bottom: 1px solid #e6e6e6; color: #e6e6e6; }
-		.locale a { font-size: 11px; color: #f7a11a; }
+	.locale { padding: 5px 16px; text-align: right; background: #f0f0f0; border-bottom: 1px solid #e6e6e6; color: #ddd; }
+	[dir='rtl'] .locale { text-align: left; }
+	.locale a { font-size: 11px; color: #f7a11a; }
+	.locale .active {
+		color: #999;
+	}
 
 
 /*  HEADER  */
@@ -30,7 +33,6 @@
 	#nav { padding: 10px 16px; background: #f7a11a; font-size: 14px; font-weight: bold; color: #ffc20f; text-align: left; }
 	[dir='rtl'] #nav { padding: 10px 16px; background: #f7a11a; font-size: 14px; font-weight: bold; color: #ffc20f; text-align: right; }
 		#nav a { color: #fff; }
-
 
 /*  BANNER  */
 

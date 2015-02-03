@@ -12,16 +12,16 @@
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
     <meta name="description" content="mama.unicore.io is a week-by-week guide to pregnancy, birth and early childhood. It was founded by the Mobile Alliance for Maternal Action to put the power of health in every mama's hand.">
     <meta name="keywords" content="moms,maternal,baby,pregnancy,pregnant,expectant,mama,askmama,ask,mother,pain,birth,help">
-    <link href="/static/css/style.css?20141110" rel="stylesheet" type="text/css" />
+    <link href="/static/css/style.css?20150203" rel="stylesheet" type="text/css" />
   </head>
   <body>
   <div id="wrap">
 
     <div class="locale">
-      <span tal:repeat="item view.get_available_languages">
-        <a href="/locale/?language=${item[0]}">${item[1]}</a>
-        <span tal:omit-tag="" tal:condition="not repeat.item.end"> |</span>
+      <span tal:repeat="item view.get_display_languages()">
+        <a tal:attributes="{'class':'active'} if view.locale==item[0] else {}" href="/locale/${item[0]}/">${item[1]}</a> |
       </span>
+      <a href="/locale/change/" tal:condition="len(view.get_available_languages)>2 ">&rarr;</a>
     </div>
 
     <div id="header">
@@ -32,7 +32,7 @@
         </a>
     </div><!--/header-->
 
-    <div id="nav">
+    <div id="nav" metal:define-slot="nav">
         <a href="/" i18n:translate="Home">Home</a>
         <span tal:repeat="cat view.get_top_nav">
         <a href="/content/list/${cat.uuid}/">| ${cat.title}</a>
@@ -42,7 +42,7 @@
     <div id="content">
       <div metal:define-slot="content"></div>
 
-      <div id="menu">
+      <div id="menu" metal:define-slot="menu">
           <span tal:repeat="cat view.get_top_nav">
             <a href="/content/list/${cat.uuid}/">${cat.title}</a>
             <span omit-tag="" tal:condition="not repeat.cat.end"> |</span>
