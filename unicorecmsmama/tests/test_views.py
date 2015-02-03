@@ -48,24 +48,10 @@ class TestViews(UnicoreTestCase):
 
         resp = self.app.get('/', status=200)
         self.assertTrue(
-            '<div id="banner">Advice to help you care for your family '
-            'from experts &amp; moms</div>' in
+            '<div id="banner">Advice from experts and parents</div>' in
             resp.body)
 
         resp = self.app.get('/?_LOCALE_=eng_UK', status=200)
         self.assertTrue(
-            '<div id="banner">Advice to help you care for your family '
-            'from experts &amp; moms</div>' in
-            resp.body)
-
-        resp = self.app.get('/?_LOCALE_=swa_TZ', status=200)
-        self.assertTrue(
-            '<div id="banner">Ushauri kukusaidia kutunza familia yako '
-            'kutoka wataalam na wamama</div>' in
-            resp.body)
-
-        resp = self.app.get('/?_LOCALE_=swh_TZ', status=200)
-        self.assertTrue(
-            '<div id="banner">Ushauri kukusaidia kutunza familia yako '
-            'kutoka wataalam na wamama</div>' in
+            '<div id="banner">Advice from experts and parents</div>' in
             resp.body)
