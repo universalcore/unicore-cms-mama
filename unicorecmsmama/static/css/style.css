@@ -20,6 +20,11 @@
 	.locale .active {
 		color: #999;
 	}
+	.locale-change {
+        position: relative;
+        top: -3px;
+        font-weight: bold;
+    }
 
 
 /*  HEADER  */
