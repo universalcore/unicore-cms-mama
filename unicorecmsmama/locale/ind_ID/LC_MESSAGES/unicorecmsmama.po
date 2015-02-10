@@ -1,4 +1,4 @@
-#
+# 
 # SOME DESCRIPTIVE TITLE
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-10 09:04+0200\n"
-"PO-Revision-Date: 2015-01-23 16:05+0000\n"
+"POT-Creation-Date: 2015-01-29 15:49+0200\n"
+"PO-Revision-Date: 2015-02-09 14:44+0000\n"
 "Last-Translator: Tash <tash@praekelt.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ind_ID\n"
@@ -15,33 +15,34 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1422029159.990687\n"
+"X-POOTLE-MTIME: 1423493099.529729\n"
 
 #. Default: Advice from experts and parents
-#: unicorecmsmama/templates/home.pt:5
+#: ./unicorecmsmama/templates/home.pt:5
 msgid "Advice from experts and parents"
-msgstr ""
+msgstr "Saran dari pakar dan orang tua"
 
 #. Default: Recommended
-#: unicorecmsmama/templates/home.pt:13
+#: ./unicorecmsmama/templates/home.pt:13
 msgid "Recommended"
 msgstr "Disarankan"
 
 #. Default: More
-#: unicorecmsmama/templates/home.pt:71 unicorecmsmama/templates/content.pt:54
+#: ./unicorecmsmama/templates/home.pt:71
+#: ./unicorecmsmama/templates/content.pt:54
 msgid "More"
-msgstr "Lainnya"
+msgstr "Lebih"
 
 #. Default: More Information
-#: unicorecmsmama/templates/content.pt:39
+#: ./unicorecmsmama/templates/content.pt:39
 msgid "More Information"
-msgstr "Lainnya"
+msgstr "Informasi lebih lanjut"
 
 #. Default: Home
-#: unicorecmsmama/templates/base.pt:58
+#: ./unicorecmsmama/templates/base.pt:58
 msgid "Home"
-msgstr "Laman utama”"
+msgstr "Halaman utama"
 
+#, fuzzy
 #~ msgid "Advice to help you care for your family from experts &amp; moms"
-#~ msgstr ""
-#~ "Nasihat untuk membantu Anda mengurus keluarga dari para pakar &amp; bunda"
+#~ msgstr "Saran dari pakar dan orang tua"
