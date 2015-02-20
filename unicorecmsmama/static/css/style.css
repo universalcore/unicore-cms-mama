@@ -93,6 +93,10 @@
 	[dir='rtl'] #menu { padding: 10px 16px; background: #f7a11a; color: #ffc20f; text-align: right; font-weight: bold; }
 		#menu a, #menu span { color: #fff; }
 
+/* BASE */
+	.form-search input {border: 0;}
+	.form-search #q {padding: 5px;}
+	.form-search {padding:10px 10px; background-color: #f7a11a; margin:0;}
 
 /*  FOOTER  */
 
