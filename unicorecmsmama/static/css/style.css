@@ -86,7 +86,8 @@
 		#content .category-mama-to-mama .pagi a,
 		#content span.category-mama-to-mama a { color: #d81f29!important; }
 
-
+/* SEARCH RESULTS*/
+	.search-results { padding: 14px 16px; margin: 0; border: 0; border-bottom: 1px solid #e6e6e6;}
 /*  MENU  */
 
 	#menu { padding: 10px 16px; background: #f7a11a; color: #ffc20f; text-align: left; font-weight: bold; }
