@@ -13,7 +13,9 @@
                 <div tal:repeat="result paginator.get_page()" tal:condition="paginator" class="search-results">
                         <a href="/content/detail/${result.uuid}/">${result.title}</a>
                         <text i18n:translate='in' tal:condition="result.primary_category">in</text>
+                        <span tal:condition="result.primary_category" class="category-${view.get_category(result.primary_category).slug}">
                         <a href="/content/detail/${view.get_category(result.primary_category).uuid}/" tal:condition="result.primary_category">${view.get_category(result.primary_category).title}</a>
+                        </span>
                </div>
 
                 <div tal:condition="not paginator" class="search-results">
