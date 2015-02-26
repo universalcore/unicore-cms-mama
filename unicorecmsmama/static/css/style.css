@@ -86,13 +86,17 @@
 		#content .category-mama-to-mama .pagi a,
 		#content span.category-mama-to-mama a { color: #d81f29!important; }
 
+/* SEARCH */
+	.search-results { padding: 14px 16px; margin: 0; border: 0; border-bottom: 1px solid #e6e6e6;}
 
+	.form-search input {border: 0;}
+	.form-search #q {padding: 5px;}
+	.form-search {padding:10px 10px; background-color: #f7a11a; margin:0;}
 /*  MENU  */
 
 	#menu { padding: 10px 16px; background: #f7a11a; color: #ffc20f; text-align: left; font-weight: bold; }
 	[dir='rtl'] #menu { padding: 10px 16px; background: #f7a11a; color: #ffc20f; text-align: right; font-weight: bold; }
 		#menu a, #menu span { color: #fff; }
-
 
 /*  FOOTER  */
 
