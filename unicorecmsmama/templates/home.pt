@@ -3,8 +3,7 @@
      i18n:domain="unicorecmsmama">
 <div metal:fill-slot="content">
 
-    <div id="banner" i18n:translate="Advice from experts and parents">
-            Advice from experts and parents
+    <div id="banner" tal:define="l view.get_localisation(); logo_text l.logo_text if (l and l.logo_text) else translate('Advice from experts and parents', domain='unicorecmsmama')" tal:content="logo_text">
     </div><!--/banner-->
 
     <div class="category-recommended" tal:condition="view.get_featured_pages()">
