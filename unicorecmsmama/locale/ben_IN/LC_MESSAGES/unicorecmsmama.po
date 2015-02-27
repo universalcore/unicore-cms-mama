@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-26 13:51+0200\n"
+"POT-Creation-Date: 2015-02-27 13:21+0200\n"
 "PO-Revision-Date: 2015-02-09 14:47+0000\n"
 "Last-Translator: Tash <tash@praekelt.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,43 +17,48 @@ msgstr ""
 "X-Generator: Pootle 2.5.1.1\n"
 "X-POOTLE-MTIME: 1423493233.013245\n"
 
+#. Default: Advice from experts and parents
+#: unicorecmsmama/templates/home.pt:5
+msgid "Advice from experts and parents"
+msgstr "বিশেষজ্ঞ এবং মা বাবাদের পরামর্শ"
+
 #. Default: Recommended
-#: unicorecmsmama/templates/home.pt:12
+#: unicorecmsmama/templates/home.pt:10
 msgid "Recommended"
 msgstr ""
 
 #. Default: More
-#: unicorecmsmama/templates/home.pt:70 unicorecmsmama/templates/content.pt:54
+#: unicorecmsmama/templates/home.pt:36 unicorecmsmama/templates/content.pt:29
 msgid "More"
 msgstr "আরো"
 
 #. Default: More Information
-#: unicorecmsmama/templates/content.pt:39
+#: unicorecmsmama/templates/content.pt:22
 msgid "More Information"
 msgstr "আরো তথ্য"
 
 #. Default: 1 search result for:
-#: unicorecmsmama/templates/search_results.pt:9
+#: unicorecmsmama/templates/search_results.pt:7
 msgid "1 search result for:"
 msgstr ""
 
 #. Default: search results for:
-#: unicorecmsmama/templates/search_results.pt:14
+#: unicorecmsmama/templates/search_results.pt:8
 msgid "search results for:"
 msgstr ""
 
 #. Default: in
-#: unicorecmsmama/templates/search_results.pt:30
+#: unicorecmsmama/templates/search_results.pt:15
 msgid "in"
 msgstr ""
 
 #. Default: No results found for
-#: unicorecmsmama/templates/search_results.pt:45
+#: unicorecmsmama/templates/search_results.pt:22
 msgid "No results found for"
 msgstr ""
 
 #. Default: No results found!
-#: unicorecmsmama/templates/search_results.pt:50
+#: unicorecmsmama/templates/search_results.pt:23
 msgid "No results found!"
 msgstr ""
 
@@ -64,22 +69,22 @@ msgstr ""
 
 #. Default: Home Page
 #. Used in sentence: "Go to the <dynamic element>"
-#: unicorecmsmama/templates/404.pt:15
+#: unicorecmsmama/templates/404.pt:11
 #, fuzzy
 msgid "Home Page"
 msgstr "হোম"
 
 #. Default: Go to the <dynamic element>
-#: unicorecmsmama/templates/404.pt:13
+#: unicorecmsmama/templates/404.pt:10
 msgid "Go to the"
 msgstr ""
 
 #. Default: Search the site:
-#: unicorecmsmama/templates/404.pt:36
+#: unicorecmsmama/templates/404.pt:21
 msgid "Search the site:"
 msgstr ""
 
-#: unicorecmsmama/templates/search_box.pt:9
+#: unicorecmsmama/templates/search_box.pt:8
 msgid "Search"
 msgstr ""
 
@@ -91,15 +96,11 @@ msgstr ""
 #. Default: Next
 #. Used in sentence: "&nbsp;<dynamic element>&nbsp;&gt;"
 #. Default: &nbsp;<dynamic element>&nbsp;&gt;
-#: unicorecmsmama/templates/paginator.pt:34
-#: unicorecmsmama/templates/paginator.pt:33
+#: unicorecmsmama/templates/paginator.pt:17
 msgid "Next"
 msgstr ""
 
 #. Default: Home
-#: unicorecmsmama/templates/base.pt:58
+#: unicorecmsmama/templates/base.pt:36
 msgid "Home"
 msgstr "হোম"
-
-#~ msgid "Advice from experts and parents"
-#~ msgstr "বিশেষজ্ঞ এবং মা বাবাদের পরামর্শ"
