@@ -49,9 +49,6 @@
           </span>
       </div>
     </div>
-
-    <div metal:define-slot="search" metal:use-macro="view.search_box_template"></div>
-
     <div id="footer">
         <span>&copy; 2014 Baby Center | MAMA</span>
     </div><!--/footer-->
