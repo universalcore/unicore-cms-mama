@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE 1.0\n"
-"POT-Creation-Date: 2015-02-27 13:21+0200\n"
+"POT-Creation-Date: 2015-03-05 07:53+0200\n"
 "PO-Revision-Date: 2014-09-29 23:00+0200\n"
 "Last-Translator: TonyM <tonym@localhost>\n"
 "Language-Team: Language tha\n"
@@ -74,11 +74,6 @@ msgstr "Home in tha_TH"
 #. Default: Go to the <dynamic element>
 #: unicorecmsmama/templates/404.pt:10
 msgid "Go to the"
-msgstr ""
-
-#. Default: Search the site:
-#: unicorecmsmama/templates/404.pt:21
-msgid "Search the site:"
 msgstr ""
 
 #: unicorecmsmama/templates/search_box.pt:8

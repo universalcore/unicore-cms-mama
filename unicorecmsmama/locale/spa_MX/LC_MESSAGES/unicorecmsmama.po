@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-27 13:21+0200\n"
+"POT-Creation-Date: 2015-03-05 07:53+0200\n"
 "PO-Revision-Date: 2015-02-10 07:23+0000\n"
 "Last-Translator: Tash <tash@praekelt.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -76,11 +76,6 @@ msgstr ""
 #. Default: Go to the <dynamic element>
 #: unicorecmsmama/templates/404.pt:10
 msgid "Go to the"
-msgstr ""
-
-#. Default: Search the site:
-#: unicorecmsmama/templates/404.pt:21
-msgid "Search the site:"
 msgstr ""
 
 #: unicorecmsmama/templates/search_box.pt:8
