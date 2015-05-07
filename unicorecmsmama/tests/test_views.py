@@ -19,7 +19,8 @@ class TestViews(UnicoreTestCase):
                 },
                 'language': {
                     'type': 'string',
-                }
+                    'index': 'not_analyzed'
+                },
             }
         })
         self.workspace.setup_custom_mapping(Category, {
@@ -113,9 +114,9 @@ class TestViews(UnicoreTestCase):
     def test_views_no_primary_category(self):
         [page] = self.create_pages(
             self.workspace,
-            linked_pages=None,
-            count=1, content='', description='',
-            primary_category=None,
+            count=1,
+            featured=True,
+            description='',
             created_at='2015-01-01T00:00:00')
 
         # checks that relevant views don't generate exceptions

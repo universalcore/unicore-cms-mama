@@ -12,7 +12,7 @@
             <condition tal:omit-tag="" tal:condition="page.image_host and page.image">
                     <img alt="img" src="${view.get_image_url(page.image_host, page.image, 45, 45)}"/>
             </condition>
-            <span class="category-${primary_category.slug}" tal:define="primary_category view.get_category(page.primary_category)">
+            <span class="category-${primary_category.slug}" tal:define="primary_category view.get_category(page.primary_category)" tal:condition="primary_category">
             <a href="/content/detail/${page.uuid}/">${primary_category.title}</a>
             </span>
             <br />
