@@ -3,7 +3,7 @@ from pyramid import testing
 
 from cms.tests.base import UnicoreTestCase
 from unicorecmsmama import main
-from unicore.content.models import Page, Localisation
+from unicore.content.models import Page, Localisation, Category
 
 
 class TestViews(UnicoreTestCase):
@@ -19,6 +19,21 @@ class TestViews(UnicoreTestCase):
                 },
                 'language': {
                     'type': 'string',
+                }
+            }
+        })
+        self.workspace.setup_custom_mapping(Category, {
+            'properties': {
+                'slug': {
+                    'type': 'string',
+                    'index': 'not_analyzed',
+                },
+                'language': {
+                    'type': 'string',
+                    'index': 'not_analyzed',
+                },
+                'position': {
+                    'type': 'long'
                 }
             }
         })
@@ -94,3 +109,18 @@ class TestViews(UnicoreTestCase):
         self.assertTrue(
             '<div id="banner">Advice foo</div>' in
             localise_logo('ind_ID', 'Advice foo'))
+
+    def test_views_no_primary_category(self):
+        [page] = self.create_pages(
+            self.workspace,
+            linked_pages=None,
+            count=1, content='', description='',
+            primary_category=None,
+            created_at='2015-01-01T00:00:00')
+
+        # checks that relevant views don't generate exceptions
+        self.app.get('/')
+        self.app.get('/spice/')
+        self.app.get('/content/detail/%s/' % page.uuid)
+        self.app.get('/spice/content/detail/%s/' % page.uuid)
+        self.app.get('/content/comments/%s/' % page.uuid)
