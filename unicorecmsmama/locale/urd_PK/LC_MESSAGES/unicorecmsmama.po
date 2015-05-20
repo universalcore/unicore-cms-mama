@@ -7,35 +7,35 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-05-20 11:01+0200\n"
-"PO-Revision-Date: 2015-03-31 15:38+0000\n"
-"Last-Translator: Tash <tash@praekelt.com>\n"
+"PO-Revision-Date: 2015-04-23 08:49+0000\n"
+"Last-Translator: Anne <anneballs@contentconsultants.co.uk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: swa_KE\n"
+"Language: urd_PK\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1427816291.381689\n"
+"X-POOTLE-MTIME: 1429778986.834475\n"
 
 #. Default: Advice from experts and parents
 #: unicorecmsmama/templates/home.pt:5
 msgid "Advice from experts and parents"
-msgstr "Ushauri kutoka kwa wataalamu na wazazi"
+msgstr " ماہرین اور والدین سے مشورہ "
 
 #. Default: Recommended
 #: unicorecmsmama/templates/home.pt:10
 msgid "Recommended"
-msgstr "Mapendekezo"
+msgstr "تجویز کردہ"
 
 #. Default: More
 #: unicorecmsmama/templates/home.pt:36 unicorecmsmama/templates/content.pt:29
 msgid "More"
-msgstr "Zaidi"
+msgstr "مزید  "
 
 #. Default: More Information
 #: unicorecmsmama/templates/content.pt:22
 msgid "More Information"
-msgstr "Maelezo zaidi"
+msgstr " مزید معلومات "
 
 #. Default: 1 search result for:
 #: unicorecmsmama/templates/search_results.pt:7
@@ -72,7 +72,7 @@ msgstr ""
 #: unicorecmsmama/templates/404.pt:11
 #, fuzzy
 msgid "Home Page"
-msgstr "Nyumbani"
+msgstr "ہوم "
 
 #. Default: Go to the <dynamic element>
 #: unicorecmsmama/templates/404.pt:10
@@ -98,7 +98,4 @@ msgstr ""
 #. Default: Home
 #: unicorecmsmama/templates/base.pt:36
 msgid "Home"
-msgstr "Nyumbani"
-
-#~ msgid "Advice to help you care for your family from experts &amp; moms"
-#~ msgstr "Ushauri kukusaidia kutunza familia yako kutoka wataalam na wamama "
+msgstr "ہوم "
