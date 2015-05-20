@@ -2,9 +2,9 @@
      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
      i18n:domain="unicorecmsmama">
     <div metal:fill-slot="content">
-        <div class="category-${primary_category.slug}">
+        <div tal:attributes="class 'category-%s' % primary_category.slug if primary_category else ''">
 
-            <div class="h1">
+            <div class="h1" tal:condition="primary_category">
                 <a href="/content/list/${primary_category.uuid}/">${primary_category.title}</a>
             </div>
 
@@ -25,7 +25,7 @@
                 </div>
             </div>
 
-            <div class="pagi">
+            <div class="pagi" tal:condition="primary_category">
                 <a href="/content/list/${primary_category.uuid}/"><span i18n:translate="More">More</span> &gt;</a>
             </div>
 
