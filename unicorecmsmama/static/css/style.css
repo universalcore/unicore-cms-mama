@@ -82,9 +82,13 @@
 		#content .category-baby .pagi a,
 		#content span.category-baby a { color: #69be28!important; }
 
-		#content .category-mama-to-mama .h1 { background: #d81f29; }
-		#content .category-mama-to-mama .pagi a,
-		#content span.category-mama-to-mama a { color: #d81f29!important; }
+        #content .category-mama-to-mama .h1 { background: #d81f29; }
+        #content .category-mama-to-mama .pagi a,
+        #content span.category-mama-to-mama a { color: #d81f29!important; }
+
+		#content .category-staying-healthy .h1 { background: #ad7554; }
+		#content .category-staying-healthy .pagi a,
+		#content span.category-staying-healthy a { color: #ad7554!important; }
 
 /* SEARCH */
 	.search-results { padding: 14px 16px; margin: 0; border: 0; border-bottom: 1px solid #e6e6e6;}
