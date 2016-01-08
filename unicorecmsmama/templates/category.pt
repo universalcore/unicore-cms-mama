@@ -2,11 +2,12 @@
 <div metal:fill-slot="content" class="category-${category.slug}">
     <div class="h1">${category.title}</div>
     <div class="category-${category.slug}">
-        <div class="item" tal:repeat="page pages[:40]">
+        <div class="item" tal:repeat="page paginator.get_page()" tal:condition="paginator">
             <a href="/content/detail/${page.uuid}/">${page.title}</a>
             <div>${page.description}</div>
             <div class="date">${view.format_date(page.created_at)}</div>
         </div>
     </div>
+    <div metal:use-macro="view.paginator_template_category"></div>
 </div>
 </div>
