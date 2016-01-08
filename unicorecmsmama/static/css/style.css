@@ -35,13 +35,14 @@
 
 /*  NAV  */
 
-	#nav { padding: 10px 16px; background: #f7a11a; font-size: 14px; font-weight: bold; color: #ffc20f; text-align: left; }
-	[dir='rtl'] #nav { padding: 10px 16px; background: #f7a11a; font-size: 14px; font-weight: bold; color: #ffc20f; text-align: right; }
-		#nav a { color: #fff; }
+	#nav { padding: 10px 16px; font-size: 14px; font-weight: bold; color: #ffc20f; text-align: left; }
+	[dir='rtl'] #nav { padding: 10px 16px; font-size: 14px; font-weight: bold; color: #ffc20f; text-align: right; }
+        #nav a { color: #666666; }
+		#nav img { vertical-align: middle; }
 
 /*  BANNER  */
 
-	#banner { padding: 10px 16px; font-size: 20px; color: #666666; line-height: 26px; font-weight: bold; }
+	#banner { padding: 0 16px 10px 16px; font-size: 20px; color: #666666; line-height: 26px; font-weight: bold; text-align: center;}
 		#banner a { color: #666666; }
 		#banner img { width: 100%; display: block; }
 
@@ -82,9 +83,13 @@
 		#content .category-baby .pagi a,
 		#content span.category-baby a { color: #69be28!important; }
 
-		#content .category-mama-to-mama .h1 { background: #d81f29; }
-		#content .category-mama-to-mama .pagi a,
-		#content span.category-mama-to-mama a { color: #d81f29!important; }
+        #content .category-mama-to-mama .h1 { background: #d81f29; }
+        #content .category-mama-to-mama .pagi a,
+        #content span.category-mama-to-mama a { color: #d81f29!important; }
+
+		#content .category-staying-healthy .h1 { background: #ad7554; }
+		#content .category-staying-healthy .pagi a,
+		#content span.category-staying-healthy a { color: #ad7554!important; }
 
 /* SEARCH */
 	.search-results { padding: 14px 16px; margin: 0; border: 0; border-bottom: 1px solid #e6e6e6;}
@@ -102,6 +107,8 @@
 
 	#footer { padding: 10px 16px; color: #000; }
 
+/*Paginator*/
+    .pagenumbers {padding: 5px;}
 
 /* PREVIEW: Mobile "preview" for large screens */
 
