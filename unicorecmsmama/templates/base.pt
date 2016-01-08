@@ -27,13 +27,15 @@
     <div id="header">
         <a href="/">
           <img src="/static/img/logo-bc.png?v=2" border="0" />
-          <img src="/static/img/divider.png?v=2" border="0" />
-          <img src="/static/img/logo-mama.png?v=2" border="0" />
         </a>
     </div><!--/header-->
 
+    <div id="banner" style="display:none" i18n:translate="Advice from experts and parents">Advice from experts and parents</div>
+    <div id="banner" tal:define="l view.get_localisation(); logo_text l.logo_text if (l and l.logo_text) else translate('Advice from experts and parents', domain='unicorecmsmama')" tal:content="logo_text">
+    </div><!--/banner-->
+
     <div id="nav" metal:define-slot="nav">
-        <a href="/" i18n:translate="Home">Home</a>
+        <span><a href="/"><img src="/static/img/home.png?v=1" border="0" width="14px" /></a></span>
         <span tal:repeat="cat view.get_top_nav">
         <a href="/content/list/${cat.uuid}/">| ${cat.title}</a>
       </span>
@@ -50,7 +52,7 @@
       </div>
     </div>
     <div id="footer">
-        <span>&copy; 2014 Baby Center | MAMA</span>
+        <span>&copy; 2016 Baby Center</span>
     </div><!--/footer-->
 
   </div>
