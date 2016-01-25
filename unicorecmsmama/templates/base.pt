@@ -35,7 +35,7 @@
     </div><!--/banner-->
 
     <div id="nav" metal:define-slot="nav">
-        <span><a href="/"><img src="/static/img/home.png?v=1" border="0" width="14px" /></a></span>
+        <span><a href="/">Home</a></span>
         <span tal:repeat="cat view.get_top_nav">
         <a href="/content/list/${cat.uuid}/">| ${cat.title}</a>
       </span>
