@@ -105,7 +105,7 @@
 
 /*  FOOTER  */
 
-	#footer { padding: 10px 16px; color: #000; }
+	#footer { padding: 10px 16px; color: #999; background: #F0F0F0; }
 
 /*Paginator*/
     .pagenumbers {padding: 5px;}
