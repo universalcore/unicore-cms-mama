@@ -30,10 +30,6 @@
         </a>
     </div><!--/header-->
 
-    <div id="banner" style="display:none" i18n:translate="Advice from experts and parents">Advice from experts and parents</div>
-    <div id="banner" tal:define="l view.get_localisation(); logo_text l.logo_text if (l and l.logo_text) else translate('Advice from experts and parents', domain='unicorecmsmama')" tal:content="logo_text">
-    </div><!--/banner-->
-
     <div id="nav" metal:define-slot="nav">
         <span><a href="/">Home</a></span>
         <span tal:repeat="cat view.get_top_nav">

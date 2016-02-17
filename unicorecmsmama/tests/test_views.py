@@ -86,31 +86,6 @@ class TestViews(UnicoreTestCase):
             resp = self.app.get('/?_LOCALE_=%s' % locale, status=200)
             return resp.body
 
-        # check default locale
-        resp = self.app.get('/', status=200)
-        self.assertTrue(
-            '<div id="banner">Advice from experts and parents</div>' in
-            resp.body)
-
-        # check locale without translation
-        self.assertTrue(
-            '<div id="banner">Advice from experts and parents</div>' in
-            localise_logo('eng_GB', None))
-        self.assertTrue(
-            '<div id="banner">Advice from experts and parents</div>' in
-            localise_logo('eng_UK', None))
-        self.assertTrue(
-            '<div id="banner">Advice foo</div>' in
-            localise_logo('eng_GB', 'Advice foo'))
-
-        # check locale with translation
-        self.assertTrue(
-            '<div id="banner">Saran dari pakar dan orang tua</div>' in
-            localise_logo('ind_ID', None))  # falls back to translation files
-        self.assertTrue(
-            '<div id="banner">Advice foo</div>' in
-            localise_logo('ind_ID', 'Advice foo'))
-
     def test_views_no_primary_category(self):
         [page] = self.create_pages(
             self.workspace,
