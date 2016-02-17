@@ -71,20 +71,8 @@ class TestViews(UnicoreTestCase):
         self.workspace.save(intro_page, 'save intro')
         self.workspace.refresh_index()
 
-        def localise_logo(locale, logo_text):
-            try:
-                [l] = self.workspace.S(Localisation).filter(locale=locale)
-                l = l.get_object()
-                l = l.update({'logo_text': logo_text})
-                self.workspace.save(l, 'Localisation updated')
-                self.workspace.refresh_index()
-            except ValueError:
-                l = self.create_localisation(
-                    self.workspace,
-                    locale=locale,
-                    logo_text=logo_text)
-            resp = self.app.get('/?_LOCALE_=%s' % locale, status=200)
-            return resp.body
+        resp = self.app.get('/', status=200)
+        self.assertTrue('<a href="/">Home</a>' in resp.body)
 
     def test_views_no_primary_category(self):
         [page] = self.create_pages(
