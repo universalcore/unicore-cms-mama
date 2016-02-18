@@ -71,45 +71,8 @@ class TestViews(UnicoreTestCase):
         self.workspace.save(intro_page, 'save intro')
         self.workspace.refresh_index()
 
-        def localise_logo(locale, logo_text):
-            try:
-                [l] = self.workspace.S(Localisation).filter(locale=locale)
-                l = l.get_object()
-                l = l.update({'logo_text': logo_text})
-                self.workspace.save(l, 'Localisation updated')
-                self.workspace.refresh_index()
-            except ValueError:
-                l = self.create_localisation(
-                    self.workspace,
-                    locale=locale,
-                    logo_text=logo_text)
-            resp = self.app.get('/?_LOCALE_=%s' % locale, status=200)
-            return resp.body
-
-        # check default locale
         resp = self.app.get('/', status=200)
-        self.assertTrue(
-            '<div id="banner">Advice from experts and parents</div>' in
-            resp.body)
-
-        # check locale without translation
-        self.assertTrue(
-            '<div id="banner">Advice from experts and parents</div>' in
-            localise_logo('eng_GB', None))
-        self.assertTrue(
-            '<div id="banner">Advice from experts and parents</div>' in
-            localise_logo('eng_UK', None))
-        self.assertTrue(
-            '<div id="banner">Advice foo</div>' in
-            localise_logo('eng_GB', 'Advice foo'))
-
-        # check locale with translation
-        self.assertTrue(
-            '<div id="banner">Saran dari pakar dan orang tua</div>' in
-            localise_logo('ind_ID', None))  # falls back to translation files
-        self.assertTrue(
-            '<div id="banner">Advice foo</div>' in
-            localise_logo('ind_ID', 'Advice foo'))
+        self.assertTrue('<a href="/">Home</a>' in resp.body)
 
     def test_views_no_primary_category(self):
         [page] = self.create_pages(

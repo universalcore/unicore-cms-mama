@@ -2,10 +2,6 @@
      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
      i18n:domain="unicorecmsmama">
 <div metal:fill-slot="content">
-    <div id="banner" style="display:none" i18n:translate="Advice from experts and parents">Advice from experts and parents</div>
-    <div id="banner" tal:define="l view.get_localisation(); logo_text l.logo_text if (l and l.logo_text) else translate('Advice from experts and parents', domain='unicorecmsmama')" tal:content="logo_text">
-    </div><!--/banner-->
-
     <div class="category-recommended" tal:condition="view.get_featured_pages()">
         <div class="h1" i18n:translate="Recommended">Recommended</div>
         <div class="item" tal:repeat="page view.get_featured_pages()" >
