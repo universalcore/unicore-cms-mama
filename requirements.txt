@@ -1,2 +1,2 @@
-unicore-cms==1.9.6
+unicore-cms==1.9.7
 
