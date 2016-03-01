@@ -25,10 +25,9 @@
     </div>
 
     <div id="header">
-        <a href="/">
-          <img src="/static/img/logo-bc.png?v=20160222" border="0" />
-        </a>
-    </div><!--/header-->
+    <div metal:use-macro="view.logo_template" tal:omit-tag="" tal:define="img_attrs view.get_logo_attributes(default_image_src=request.static_url('cms:static/img/bc-logo-white-bg.jpg'))">
+    </div></div>
+    <!--/header-->
 
     <div id="nav" metal:define-slot="nav">
         <span><a href="/">Home</a></span>
