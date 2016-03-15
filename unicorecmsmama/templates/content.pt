@@ -7,6 +7,9 @@
             <div class="h1" tal:condition="primary_category">
                 <a href="/content/list/${primary_category.uuid}/">${primary_category.title}</a>
             </div>
+             <div class="pagi" tal:condition="primary_category">
+                <a href="/content/list/${primary_category.uuid}/">&lt;<span i18n:translate="Back">Back</span> </a>
+            </div>
 
             <div class="detail">
                 <div class="h3">${page.title}</div>
