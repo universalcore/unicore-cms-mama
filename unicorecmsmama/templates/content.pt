@@ -8,7 +8,7 @@
                 <a href="/content/list/${primary_category.uuid}/">${primary_category.title}</a>
             </div>
              <div class="pagi" tal:condition="primary_category">
-                <a href="/">&lt;<span i18n:translate="Back">Back</span> </a>
+                <a href="/content/list/${primary_category.uuid}/">&lt;<span i18n:translate="Back">Back</span> </a>
             </div>
 
             <div class="detail">
