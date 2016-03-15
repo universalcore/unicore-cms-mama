@@ -40,6 +40,7 @@
       <div metal:define-slot="content"></div>
 
       <div id="menu" metal:define-slot="menu">
+        <span><a href="/">Home</a> |</span>
           <span tal:repeat="cat view.get_top_nav">
             <a href="/content/list/${cat.uuid}/">${cat.title}</a>
             <span omit-tag="" tal:condition="not repeat.cat.end"> |</span>
