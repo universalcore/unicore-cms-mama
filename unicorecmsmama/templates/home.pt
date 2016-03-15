@@ -28,7 +28,7 @@
                 <div class="clear"></div>
                 </div>
             </div>
-            <div class="pagi" tal:condition="view.get_featured_category_pages(cat.uuid)">
+            <div class="pagi" tal:condition="len(view.get_featured_category_pages(cat.uuid))>1">
               <a href="/content/list/${cat.uuid}/"><span i18n:translate="More">More</span> ${cat.title} &gt;</a>
             </div>
         </div>
