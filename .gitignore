@@ -6,6 +6,7 @@ ve/
 __pycache__/
 *.py[cod]
 *.pyc
+*.DS_Store
 
 # C extensions
 *.so
@@ -57,4 +58,3 @@ coverage.xml
 
 # Sphinx documentation
 docs/_build/
-
