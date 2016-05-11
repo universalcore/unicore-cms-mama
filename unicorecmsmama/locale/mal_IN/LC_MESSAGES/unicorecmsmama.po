@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-17 16:18+0200\n"
+"POT-Creation-Date: 2016-05-11 11:29+0200\n"
 "PO-Revision-Date: 2015-02-09 17:54+0000\n"
 "Last-Translator: Tash <tash@praekelt.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,25 +17,58 @@ msgstr ""
 "X-Generator: Pootle 2.5.1.1\n"
 "X-POOTLE-MTIME: 1423504474.016896\n"
 
-#. Default: Advice from experts and parents
-#: unicorecmsmama/templates/home.pt:5
-msgid "Advice from experts and parents"
-msgstr "വിദഗ്ധരുടെയും മാതാപിതാക്കളുടെയും ഉപദേശം"
+#. Default: We can't find that page, sorry.
+#: unicorecmsmama/templates/404.pt:7
+msgid "We can't find that page, sorry."
+msgstr ""
 
-#. Default: Recommended
-#: unicorecmsmama/templates/home.pt:10
-msgid "Recommended"
-msgstr "ഏറ്റവും പുതിയത്"
+#. Default: Home Page
+#. Used in sentence: "Go to the <dynamic element>"
+#: unicorecmsmama/templates/404.pt:11
+#, fuzzy
+msgid "Home Page"
+msgstr "ഹോം പേജ്"
+
+#. Default: Go to the <dynamic element>
+#: unicorecmsmama/templates/404.pt:10
+msgid "Go to the"
+msgstr ""
+
+#. Default: Back
+#: unicorecmsmama/templates/content.pt:11
+msgid "Back"
+msgstr ""
+
+#. Default: More Information
+#: unicorecmsmama/templates/content.pt:25
+msgid "More Information"
+msgstr "കൂടുതൽ വിവരങ്ങൾ"
 
 #. Default: More
-#: unicorecmsmama/templates/home.pt:36 unicorecmsmama/templates/content.pt:29
+#: unicorecmsmama/templates/content.pt:32 unicorecmsmama/templates/home.pt:32
 msgid "More"
 msgstr "കൂടുതൽ"
 
-#. Default: More Information
-#: unicorecmsmama/templates/content.pt:22
-msgid "More Information"
-msgstr "കൂടുതൽ വിവരങ്ങൾ"
+#. Default: Recommended
+#: unicorecmsmama/templates/home.pt:6
+msgid "Recommended"
+msgstr "ഏറ്റവും പുതിയത്"
+
+#. Default: Previous
+#: unicorecmsmama/templates/paginator.pt:9
+msgid "Previous"
+msgstr ""
+
+#. Default: Next
+#. Used in sentence: "&nbsp;<dynamic element>&nbsp;&gt;"
+#. Default: &nbsp;<dynamic element>&nbsp;&gt;
+#: unicorecmsmama/templates/paginator.pt:17
+msgid "Next"
+msgstr ""
+
+#: unicorecmsmama/templates/search_box.pt:8
+msgid "Search"
+msgstr ""
 
 #. Default: 1 search result for:
 #: unicorecmsmama/templates/search_results.pt:7
@@ -62,40 +95,8 @@ msgstr ""
 msgid "No results found!"
 msgstr ""
 
-#. Default: We can't find that page, sorry.
-#: unicorecmsmama/templates/404.pt:7
-msgid "We can't find that page, sorry."
-msgstr ""
+#~ msgid "Advice from experts and parents"
+#~ msgstr "വിദഗ്ധരുടെയും മാതാപിതാക്കളുടെയും ഉപദേശം"
 
-#. Default: Home Page
-#. Used in sentence: "Go to the <dynamic element>"
-#: unicorecmsmama/templates/404.pt:11
-#, fuzzy
-msgid "Home Page"
-msgstr "ഹോം പേജ്"
-
-#. Default: Go to the <dynamic element>
-#: unicorecmsmama/templates/404.pt:10
-msgid "Go to the"
-msgstr ""
-
-#: unicorecmsmama/templates/search_box.pt:8
-msgid "Search"
-msgstr ""
-
-#. Default: Previous
-#: unicorecmsmama/templates/paginator.pt:9
-msgid "Previous"
-msgstr ""
-
-#. Default: Next
-#. Used in sentence: "&nbsp;<dynamic element>&nbsp;&gt;"
-#. Default: &nbsp;<dynamic element>&nbsp;&gt;
-#: unicorecmsmama/templates/paginator.pt:17
-msgid "Next"
-msgstr ""
-
-#. Default: Home
-#: unicorecmsmama/templates/base.pt:36
-msgid "Home"
-msgstr "ഹോം പേജ്"
+#~ msgid "Home"
+#~ msgstr "ഹോം പേജ്"
