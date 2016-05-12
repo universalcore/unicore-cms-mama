@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-17 16:18+0200\n"
+"POT-Creation-Date: 2016-05-12 11:23+0200\n"
 "PO-Revision-Date: 2015-02-09 14:44+0000\n"
 "Last-Translator: Tash <tash@praekelt.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,23 +17,23 @@ msgstr ""
 "X-Generator: Pootle 2.5.1.1\n"
 "X-POOTLE-MTIME: 1423493099.529729\n"
 
-#. Default: Advice from experts and parents
-#: unicorecmsmama/templates/home.pt:5
-msgid "Advice from experts and parents"
-msgstr "Saran dari pakar dan orang tua"
-
 #. Default: Recommended
-#: unicorecmsmama/templates/home.pt:10
+#: unicorecmsmama/templates/home.pt:6
 msgid "Recommended"
 msgstr "Disarankan"
 
 #. Default: More
-#: unicorecmsmama/templates/home.pt:36 unicorecmsmama/templates/content.pt:29
+#: unicorecmsmama/templates/home.pt:32 unicorecmsmama/templates/content.pt:32
 msgid "More"
 msgstr "Lebih"
 
+#. Default: Back
+#: unicorecmsmama/templates/content.pt:11
+msgid "Back"
+msgstr ""
+
 #. Default: More Information
-#: unicorecmsmama/templates/content.pt:22
+#: unicorecmsmama/templates/content.pt:25
 msgid "More Information"
 msgstr "Informasi lebih lanjut"
 
@@ -96,9 +96,12 @@ msgid "Next"
 msgstr ""
 
 #. Default: Home
-#: unicorecmsmama/templates/base.pt:36
+#: unicorecmsmama/templates/base.pt:33 unicorecmsmama/templates/base.pt:43
 msgid "Home"
 msgstr "Halaman utama"
+
+#~ msgid "Advice from experts and parents"
+#~ msgstr "Saran dari pakar dan orang tua"
 
 #, fuzzy
 #~ msgid "Advice to help you care for your family from experts &amp; moms"
