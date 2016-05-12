@@ -1,4 +1,4 @@
-# 
+#
 # SOME DESCRIPTIVE TITLE
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-11 11:29+0200\n"
+"POT-Creation-Date: 2016-05-12 11:19+0200\n"
 "PO-Revision-Date: 2016-03-22 12:01+0000\n"
 "Last-Translator: Botswang <botswang@praekelt.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,84 +18,84 @@ msgstr ""
 "Generated-By: Lingua 4.9\n"
 "X-POOTLE-MTIME: 1458648072.046548\n"
 
+#. Default: Recommended
+#: unicorecmsmama/templates/home.pt:6
+msgid "Recommended"
+msgstr "ေထာက္ခံခ်က္"
+
+#. Default: More
+#: unicorecmsmama/templates/home.pt:32 unicorecmsmama/templates/content.pt:32
+msgid "More"
+msgstr "ေနာက္ထပ္"
+
+#. Default: Back
+#: unicorecmsmama/templates/content.pt:11
+msgid "Back"
+msgstr ""
+
+#. Default: More Information
+#: unicorecmsmama/templates/content.pt:25
+msgid "More Information"
+msgstr "ေနာက္ထပ္ အခ်က္လက္မ်ား"
+
+#. Default: 1 search result for:
+#: unicorecmsmama/templates/search_results.pt:7
+msgid "1 search result for:"
+msgstr ""
+
+#. Default: search results for:
+#: unicorecmsmama/templates/search_results.pt:8
+msgid "search results for:"
+msgstr ""
+
+#. Default: in
+#: unicorecmsmama/templates/search_results.pt:15
+msgid "in"
+msgstr ""
+
+#. Default: No results found for
+#: unicorecmsmama/templates/search_results.pt:22
+msgid "No results found for"
+msgstr ""
+
+#. Default: No results found!
+#: unicorecmsmama/templates/search_results.pt:23
+msgid "No results found!"
+msgstr ""
+
 #. Default: We can't find that page, sorry.
-#: ./unicorecmsmama/templates/404.pt:7
+#: unicorecmsmama/templates/404.pt:7
 msgid "We can't find that page, sorry."
 msgstr ""
 
 #. Default: Home Page
 #. Used in sentence: "Go to the <dynamic element>"
-#: ./unicorecmsmama/templates/404.pt:11
+#: unicorecmsmama/templates/404.pt:11
 msgid "Home Page"
 msgstr ""
 
 #. Default: Go to the <dynamic element>
-#: ./unicorecmsmama/templates/404.pt:10
+#: unicorecmsmama/templates/404.pt:10
 msgid "Go to the"
 msgstr ""
 
-#. Default: Back
-#: ./unicorecmsmama/templates/content.pt:11
-msgid "Back"
+#: unicorecmsmama/templates/search_box.pt:8
+msgid "Search"
 msgstr ""
 
-#. Default: More Information
-#: ./unicorecmsmama/templates/content.pt:25
-msgid "More Information"
-msgstr "ေနာက္ထပ္ အခ်က္လက္မ်ား"
-
-#. Default: More
-#: ./unicorecmsmama/templates/content.pt:32
-#: ./unicorecmsmama/templates/home.pt:32
-msgid "More"
-msgstr "ေနာက္ထပ္"
-
-#. Default: Recommended
-#: ./unicorecmsmama/templates/home.pt:6
-msgid "Recommended"
-msgstr "ေထာက္ခံခ်က္"
-
 #. Default: Previous
-#: ./unicorecmsmama/templates/paginator.pt:9
+#: unicorecmsmama/templates/paginator.pt:9
 msgid "Previous"
 msgstr ""
 
 #. Default: Next
 #. Used in sentence: "&nbsp;<dynamic element>&nbsp;&gt;"
 #. Default: &nbsp;<dynamic element>&nbsp;&gt;
-#: ./unicorecmsmama/templates/paginator.pt:17
-#: ./unicorecmsmama/templates/paginator.pt:17
+#: unicorecmsmama/templates/paginator.pt:17
 msgid "Next"
 msgstr ""
 
-#: ./unicorecmsmama/templates/search_box.pt:8
-msgid "Search"
-msgstr ""
-
-#. Default: 1 search result for:
-#: ./unicorecmsmama/templates/search_results.pt:7
-msgid "1 search result for:"
-msgstr ""
-
-#. Default: search results for:
-#: ./unicorecmsmama/templates/search_results.pt:8
-msgid "search results for:"
-msgstr ""
-
-#. Default: in
-#: ./unicorecmsmama/templates/search_results.pt:15
-msgid "in"
-msgstr ""
-
-#. Default: No results found for
-#: ./unicorecmsmama/templates/search_results.pt:22
-msgid "No results found for"
-msgstr ""
-
-#. Default: No results found!
-#: ./unicorecmsmama/templates/search_results.pt:23
-msgid "No results found!"
-msgstr ""
-
-#~ msgid "Home"
-#~ msgstr "အိမ္"
+#. Default: Home
+#: unicorecmsmama/templates/base.pt:33 unicorecmsmama/templates/base.pt:43
+msgid "Home"
+msgstr "အိမ္"
